@@ -15,7 +15,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages --repo --branch master --dist build",
+    "deploy": "gh-pages --branch master --dist build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
