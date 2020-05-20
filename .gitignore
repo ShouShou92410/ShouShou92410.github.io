@@ -11,6 +11,7 @@
 
 # production
 /build
+/ShouShou92410.code-workspace
 
 # misc
 .DS_Store
