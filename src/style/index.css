@@ -8,6 +8,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.text-sm {
+  font-size: 0.8em;
+}
+
 img {
   padding-left: 2px;
   padding-right: 2px;
@@ -23,10 +27,7 @@ img {
   font-size: 18px;
 }
 
-.dark {
-  color: rgba(26, 26, 26, 0.75);
-}
-
+.dark,
 .dark > a {
   color: rgba(26, 26, 26, 0.75);
 }
@@ -42,4 +43,9 @@ img {
 
 .w-75 {
   width: 75%;
+}
+
+.blog-post-preview {
+  max-height: 4.5em;
+  overflow: hidden;
 }

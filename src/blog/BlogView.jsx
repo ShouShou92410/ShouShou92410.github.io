@@ -1,7 +1,7 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Alert from 'react-bootstrap/Alert';
+import BlogPostCardView from './BlogPostCardView';
 
 function BlogView() {
   return (
@@ -9,10 +9,10 @@ function BlogView() {
       <Row>
         <Col lg={2} />
         <Col lg={7}>
-          <h1>Blog Content</h1>
-          <Alert variant={'warning'} className="text-center mt-2">
-            <Alert.Heading>This page is still under construction.</Alert.Heading>
-          </Alert>
+          <h1>Blog</h1>
+          <hr />
+          <BlogPostCardView />
+          <BlogPostCardView />
         </Col>
       </Row>
     </>
