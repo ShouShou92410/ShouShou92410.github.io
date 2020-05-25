@@ -8,7 +8,7 @@ function QuizResultView() {
   return (
     <>
       {/* Card border, show/hide alerts */}
-      <Card border="danger" className="width-75 mt-2 mb-2">
+      <Card border="danger" className="w-75 mt-2 mb-2">
         <Card.Header>Question 1</Card.Header>
         <Card.Body className="text-center pt-0">
           <Card.Title className="mt-2">
