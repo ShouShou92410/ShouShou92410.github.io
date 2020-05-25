@@ -10,6 +10,7 @@ function SignInModal({ show, handleSignInModalClose }) {
   const handleClose = () => {
     handleSignInModalClose();
     setSignInInfo({});
+    setSignInError('');
   };
 
   const handleSignInInfoChange = (e) =>
