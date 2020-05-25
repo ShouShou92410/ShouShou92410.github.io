@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from '../utility/Context';
 import BlogView from './BlogView';
 
 function Blog() {
-  return <BlogView />;
+  const { currentUser } = useContext(UserContext);
+
+  return <BlogView currentUser={currentUser} />;
 }
 
 export default Blog;

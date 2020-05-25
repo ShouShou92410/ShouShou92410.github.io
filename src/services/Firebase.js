@@ -34,6 +34,18 @@ export const signOut = () => {
 /* Database operations */
 const database = firebase.database();
 
+export const createBlogPost = ({ title, content }) => {
+  database
+    .ref('/blog')
+    .push()
+    .set({
+      title,
+      content,
+      datePosted: firebase.database.ServerValue.TIMESTAMP,
+      uid: firebase.auth().currentUser.uid
+    });
+};
+
 export const createVocabulary = ({ chinese, english, kanji, gojuuon }) => {
   database
     .ref('/vocabulary')

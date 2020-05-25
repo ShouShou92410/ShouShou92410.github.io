@@ -45,6 +45,10 @@ img {
   width: 75%;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .blog-post-preview {
   max-height: 4.5em;
   overflow: hidden;

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+import HomeView from './HomeView';
 import About from '../about/About';
 import Management from '../management/Management';
 import Quiz from '../quiz/Quiz';
 import Blog from '../blog/Blog';
-import HomeView from './HomeView';
 
-function ContentView({ currentUser }) {
+function ContentView() {
   return (
     <Container fluid>
       <Switch>
@@ -20,11 +20,9 @@ function ContentView({ currentUser }) {
         <Route path="/blog">
           <Blog />
         </Route>
-        {currentUser && (
-          <Route path="/management">
-            <Management />
-          </Route>
-        )}
+        <Route path="/management">
+          <Management />
+        </Route>
         <Route path="/">
           <HomeView />
         </Route>
