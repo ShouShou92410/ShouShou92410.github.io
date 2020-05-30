@@ -8,7 +8,7 @@ function BlogPostList() {
     getAllBlogPost().then((snapshot) => {
       // Object.entries() turns snapshot.val() into [key, value]
       setPostList(
-        Object.entries(snapshot.val())
+        Object.entries(snapshot.val() || [])
           .reverse()
           .map((post) => {
             return {
