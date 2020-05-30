@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import BlogPostList from './list/BlogPostList';
 import BlogPostRead from './read/BlogPostRead';
 import BlogPostNew from './new/BlogPostNew';
 import BlogPostEdit from './edit/BlogPostEdit';
+import AboutSidePanelView from '../about/AboutSidePanelView';
 
-function BlogView({ currentUser }) {
+function BlogView() {
   return (
     <>
       <Row>
@@ -31,15 +30,7 @@ function BlogView({ currentUser }) {
           </Switch>
         </Col>
         <Col lg={2}>
-          <Switch>
-            <Route path="/blog">
-              {currentUser && (
-                <Button variant="success" as={Link} to={`/blog/new`} className="mt-2 w-100">
-                  New Post
-                </Button>
-              )}
-            </Route>
-          </Switch>
+          <AboutSidePanelView />
         </Col>
       </Row>
     </>

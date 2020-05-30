@@ -9,7 +9,7 @@ import Blog from '../blog/Blog';
 
 function ContentView() {
   return (
-    <Container fluid>
+    <Container fluid className="mt-2">
       <Switch>
         <Route path="/about">
           <About />

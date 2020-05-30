@@ -7,6 +7,12 @@
 p {
   font-size: 18px;
   white-space: pre-wrap;
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+hr {
+  margin: 0 !important;
 }
 
 code {
@@ -46,4 +52,5 @@ img {
   height: 4.5em;
   max-height: 4.5em;
   overflow: hidden;
+  margin: 0em !important;
 }
