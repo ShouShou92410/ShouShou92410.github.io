@@ -34,6 +34,10 @@ export const signOut = () => {
 /* Database operations */
 const database = firebase.database();
 
+export const getAllBlogPost = () => {
+  return database.ref('/blog').once('value');
+};
+
 export const createBlogPost = ({ title, content }) => {
   database
     .ref('/blog')
@@ -41,7 +45,7 @@ export const createBlogPost = ({ title, content }) => {
     .set({
       title,
       content,
-      datePosted: firebase.database.ServerValue.TIMESTAMP,
+      datePosted: getCurrentDateTime(),
       uid: firebase.auth().currentUser.uid
     });
 };
@@ -57,3 +61,11 @@ export const createVocabulary = ({ chinese, english, kanji, gojuuon }) => {
       gojuuon
     });
 };
+
+function getCurrentDateTime() {
+  let now = new Date();
+  let date = `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()}`;
+  let time = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+
+  return `${date} ${time}`;
+}

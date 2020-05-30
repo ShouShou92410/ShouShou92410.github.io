@@ -11,8 +11,16 @@ function BlogPostNew() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    createBlogPost(formInput);
-    setFormInput({});
+
+    let error = '';
+    if (!formInput.title) error += 'Invalid title.\n';
+    if (!formInput.content) error += 'Invalid content.\n';
+    if (error) alert(error);
+    else {
+      createBlogPost(formInput);
+      setFormInput({});
+      window.location.replace('/blog');
+    }
   };
 
   return (

@@ -1,15 +1,14 @@
 import React from 'react';
 import BlogPostCardView from './BlogPostCardView';
 
-function BlogPostListView() {
+function BlogPostListView({ postList }) {
   return (
     <>
       <h1>Blog</h1>
       <hr />
-      <BlogPostCardView />
-      <BlogPostCardView />
-      <BlogPostCardView />
-      <BlogPostCardView />
+      {postList.map((post) => (
+        <BlogPostCardView key={post.key} post={post} />
+      ))}
     </>
   );
 }
