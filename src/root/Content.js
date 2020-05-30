@@ -1,11 +1,8 @@
-import React, { useContext } from 'react';
-import { UserContext } from '../utility/Context';
+import React from 'react';
 import ContentView from './ContentView';
 
 function Content() {
-  const { currentUser } = useContext(UserContext);
-
-  return <ContentView currentUser={currentUser} />;
+  return <ContentView />;
 }
 
 export default Content;

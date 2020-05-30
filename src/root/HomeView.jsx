@@ -9,7 +9,7 @@ function HomeView() {
         <Col lg={2} />
         <Col lg={7}>
           <h1>Welcome!</h1>
-          <p className="fs-18">
+          <p>
             This is my personal website, it hosts my personal projects and progress. You can see
             them by clicking the links in the navigation bar over on the top. The website is using
             React for its front-end, Firebase for its database, and it is hosting as a GitHub user

@@ -4,6 +4,17 @@
   background-color: rgb(209, 209, 209);
 }
 
+p {
+  font-size: 18px;
+  white-space: pre-wrap;
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+hr {
+  margin: 0 !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -23,10 +34,6 @@ img {
   z-index: 10;
 }
 
-.fs-18 {
-  font-size: 18px;
-}
-
 .dark,
 .dark > a {
   color: rgba(26, 26, 26, 0.75);
@@ -41,11 +48,9 @@ img {
   float: right;
 }
 
-.w-75 {
-  width: 75%;
-}
-
 .blog-post-preview {
+  height: 4.5em;
   max-height: 4.5em;
   overflow: hidden;
+  margin: 0em !important;
 }

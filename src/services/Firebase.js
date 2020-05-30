@@ -34,6 +34,30 @@ export const signOut = () => {
 /* Database operations */
 const database = firebase.database();
 
+export const getAllBlogPost = () => {
+  return database.ref('/blog').once('value');
+};
+
+export const getBlogPost = (id) => {
+  return database.ref(`/blog/${id}`).once('value');
+};
+
+export const deleteBlogPost = (id) => {
+  return database.ref(`/blog/${id}`).remove();
+};
+
+export const createBlogPost = ({ title, content }) => {
+  database
+    .ref('/blog')
+    .push()
+    .set({
+      title,
+      content,
+      datePosted: getCurrentDateTime(),
+      uid: firebase.auth().currentUser.uid
+    });
+};
+
 export const createVocabulary = ({ chinese, english, kanji, gojuuon }) => {
   database
     .ref('/vocabulary')
@@ -45,3 +69,11 @@ export const createVocabulary = ({ chinese, english, kanji, gojuuon }) => {
       gojuuon
     });
 };
+
+function getCurrentDateTime() {
+  let now = new Date();
+  let date = `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()}`;
+  let time = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+
+  return `${date} ${time}`;
+}
