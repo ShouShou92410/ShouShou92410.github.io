@@ -42,6 +42,10 @@ export const getBlogPost = (id) => {
   return database.ref(`/blog/${id}`).once('value');
 };
 
+export const deleteBlogPost = (id) => {
+  return database.ref(`/blog/${id}`).remove();
+};
+
 export const createBlogPost = ({ title, content }) => {
   database
     .ref('/blog')
