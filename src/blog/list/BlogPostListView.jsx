@@ -7,7 +7,7 @@ function BlogPostListView({ postList }) {
       <h1>Blog</h1>
       <hr />
       {postList.map((post) => (
-        <BlogPostCardView key={post.key} post={post} />
+        <BlogPostCardView key={post.postID} post={post} />
       ))}
     </>
   );

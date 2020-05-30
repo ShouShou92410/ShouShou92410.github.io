@@ -4,6 +4,11 @@
   background-color: rgb(209, 209, 209);
 }
 
+p {
+  font-size: 18px;
+  white-space: pre-wrap;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -21,10 +26,6 @@ img {
   position: sticky;
   top: 0;
   z-index: 10;
-}
-
-.fs-18 {
-  font-size: 18px;
 }
 
 .dark,
@@ -50,6 +51,7 @@ img {
 }
 
 .blog-post-preview {
+  height: 4.5em;
   max-height: 4.5em;
   overflow: hidden;
 }

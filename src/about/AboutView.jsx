@@ -11,7 +11,7 @@ function AboutView() {
         <Col lg={7}>
           <h1>About</h1>
           <h5>Who?</h5>
-          <p className="fs-18">
+          <p>
             My name is 文宥翔 or Yu-Hsiang Wen in English, you can also called me Sean Wen. I'm a
             Taiwanese that came to Canada at the age of 12, after I finished my elementary school.
             Currently I'm a University of Calgary student majoring in Computer Science.

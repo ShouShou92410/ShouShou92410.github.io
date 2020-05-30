@@ -38,6 +38,10 @@ export const getAllBlogPost = () => {
   return database.ref('/blog').once('value');
 };
 
+export const getBlogPost = (id) => {
+  return database.ref(`/blog/${id}`).once('value');
+};
+
 export const createBlogPost = ({ title, content }) => {
   database
     .ref('/blog')

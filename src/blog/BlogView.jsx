@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import BlogPostList from './list/BlogPostList';
+import BlogPostRead from './read/BlogPostRead';
 import BlogPostNew from './new/BlogPostNew';
 import BlogPostEdit from './edit/BlogPostEdit';
 
@@ -15,6 +16,9 @@ function BlogView({ currentUser }) {
         <Col lg={2} />
         <Col lg={7}>
           <Switch>
+            <Route path="/blog/read">
+              <BlogPostRead />
+            </Route>
             <Route path="/blog/new">
               <BlogPostNew />
             </Route>

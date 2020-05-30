@@ -12,7 +12,7 @@ function BlogPostList() {
           .reverse()
           .map((post) => {
             return {
-              key: post[0],
+              postID: post[0],
               ...post[1]
             };
           })
