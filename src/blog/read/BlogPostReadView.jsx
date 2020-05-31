@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
@@ -15,7 +16,12 @@ function BlogPostReadView({ currentUser, post, handleDelete }) {
             {currentUser && (
               <>
                 <Col lg={6}>
-                  <Button variant="warning" size="sm" className="w-100">
+                  <Button
+                    variant="warning"
+                    size="sm"
+                    as={Link}
+                    to={`/blog/edit/${post.postID}`}
+                    className="w-100">
                     Edit
                   </Button>
                 </Col>

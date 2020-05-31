@@ -21,7 +21,7 @@ function BlogView() {
             <Route path="/blog/new">
               <BlogPostNew />
             </Route>
-            <Route path="/blog/edit">
+            <Route path="/blog/edit/:postID">
               <BlogPostEdit />
             </Route>
             <Route path="/blog">

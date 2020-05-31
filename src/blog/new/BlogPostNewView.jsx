@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 function BlogPostNewView({ handleFormChange, handleSubmit }) {
   return (
     <>
-      <h1>Create New Post</h1>
+      <h2>Create New Post</h2>
       <Form className="mt-2" onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Control
