@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { UserContext } from '../../utility/Context';
 import { useHistory } from 'react-router-dom';
-import { deleteBlogPost } from '../../services/Firebase';
-import { getBlogPost } from '../../services/Firebase';
+import { getBlogPost, deleteBlogPost } from '../../services/Firebase';
 import BlogPostReadView from './BlogPostReadView';
 
 function BlogPostRead() {
@@ -23,6 +22,7 @@ function BlogPostRead() {
 
   const handleDelete = () => {
     deleteBlogPost(postID);
+    setPostID(null);
     history.push('/blog');
   };
 

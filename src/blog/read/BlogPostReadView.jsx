@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
@@ -10,22 +11,39 @@ function BlogPostReadView({ currentUser, post, handleDelete }) {
         <Col lg={8}>
           <h1>{post.title}</h1>
         </Col>
-        {currentUser && (
-          <>
-            <Col lg={2}>
-              <Button variant="warning" className="mt-1 w-100">
-                Edit
-              </Button>
+        <Col lg={4}>
+          <Row style={{ height: '60%' }}>
+            {currentUser && (
+              <>
+                <Col lg={6}>
+                  <Button
+                    variant="warning"
+                    size="sm"
+                    as={Link}
+                    to={`/blog/edit/${post.postID}`}
+                    className="w-100">
+                    Edit
+                  </Button>
+                </Col>
+                <Col lg={6}>
+                  <Button variant="danger" size="sm" onClick={handleDelete} className="w-100">
+                    Delete
+                  </Button>
+                </Col>
+              </>
+            )}
+          </Row>
+          <Row>
+            <Col lg={12} align="right">
+              {post.datePosted}
             </Col>
-            <Col lg={2}>
-              <Button variant="danger" onClick={handleDelete} className="mt-1 w-100">
-                Delete
-              </Button>
-            </Col>
-          </>
-        )}
+          </Row>
+        </Col>
       </Row>
       <hr />
+      <Row>
+        <Col lg={8} />
+      </Row>
       <p className="mt-2">{post.content}</p>
     </>
   );
