@@ -15,7 +15,7 @@ function BlogView() {
         <Col lg={2} />
         <Col lg={7}>
           <Switch>
-            <Route path="/blog/read">
+            <Route path="/blog/read/:postID">
               <BlogPostRead />
             </Route>
             <Route path="/blog/new">
