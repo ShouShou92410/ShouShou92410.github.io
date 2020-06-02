@@ -2,6 +2,8 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import TableToJson from '../TableToJson';
+
 function HomeView() {
   return (
     <>
@@ -23,6 +25,9 @@ function HomeView() {
             to fetch data.
           </p>
         </Col>
+      </Row>
+      <Row>
+        <TableToJson />
       </Row>
     </>
   );
