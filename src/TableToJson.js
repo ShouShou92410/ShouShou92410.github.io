@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 function TableToJson() {
   const [fileInput, setFileInput] = useState({ name: 'No file chosen' });
 
-  const handleFileChange = (e) => setFileInput(e.target.files[0]);
+  const handleFileChange = (e) => setFileInput(e.target.files[0] || { name: 'No file chosen' });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,10 +16,26 @@ function TableToJson() {
     let fr = new FileReader();
     fr.onload = () => {
       fileContent = fr.result.split('\n');
-      fileContent.pop();
+      fileContent.pop(); //Remove last line break
 
-      console.log(fileContent);
-      console.log(fileContent.map((x) => x.split(',')));
+      fileContent = fileContent.map((x) => x.split(','));
+
+      let keys = fileContent.shift(); //Remove first element, which is a list of keys
+      if (keys.length === [...new Set(keys)].length) {
+        const jsonResult = fileContent.map((row) => {
+          let rowObject = {};
+
+          keys.forEach((key, index) => {
+            rowObject[key] = row[index];
+          });
+
+          return rowObject;
+        });
+        console.log(fileContent);
+        console.log(jsonResult);
+      } else {
+        console.log('keys not unique.');
+      }
     };
     fr.readAsText(fileInput);
   };
