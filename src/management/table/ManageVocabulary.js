@@ -1,23 +1,30 @@
 import React, { useState } from 'react';
-import { createVocabulary } from '../../services/Firebase';
+import { insertVocabulary } from '../../services/Firebase';
 import ManageVocabularyView from './ManageVocabularyView';
+import FileHelper from '../../utility/FileHelper';
 
 function ManageVocabulary() {
-  const [formInput, setFormInput] = useState({});
+  const [fileInput, setFileInput] = useState({ name: 'No file chosen' });
 
-  const handleFormChange = (e) => setFormInput({ ...formInput, [e.target.name]: e.target.value });
-
-  const handleSubmit = (e) => {
+  const handleFileChange = (e) => setFileInput(e.target.files[0] || { name: 'No file chosen' });
+  const handleInsert = async (e) => {
     e.preventDefault();
-    createVocabulary(formInput);
-    setFormInput({});
+
+    if (FileHelper.hasFileExtension(fileInput, 'csv')) {
+      const jsonResult = await FileHelper.CSVtoJSON(fileInput);
+      jsonResult.forEach((Vocabulary) => insertVocabulary(Vocabulary));
+    } else {
+      alert('Please provide a csv file.');
+    }
+
+    setFileInput({ name: 'No file chosen' });
   };
 
   return (
     <ManageVocabularyView
-      formInput={formInput}
-      handleFormChange={handleFormChange}
-      handleSubmit={handleSubmit}
+      fileInput={fileInput}
+      handleFileChange={handleFileChange}
+      handleInsert={handleInsert}
     />
   );
 }

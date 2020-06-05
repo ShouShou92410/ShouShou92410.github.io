@@ -58,16 +58,11 @@ export const createBlogPost = ({ title, content }) => {
     });
 };
 
-export const createVocabulary = ({ chinese, english, kanji, gojuuon }) => {
+export const insertVocabulary = ({ chinese, english, gojuuon, kanji, partofspeech }) => {
   database
     .ref('/vocabulary')
     .push()
-    .set({
-      chinese,
-      english,
-      kanji,
-      gojuuon
-    });
+    .set({ chinese, english, gojuuon, kanji, partofspeech });
 };
 
 function getCurrentDateTime() {
