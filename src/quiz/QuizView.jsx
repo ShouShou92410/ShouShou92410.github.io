@@ -1,9 +1,9 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import QuizSetting from './QuizSetting';
-import QuizQuestion from './QuizQuestion';
-import QuizResult from './QuizResult';
+import QuizSetting from './initialization/QuizInitialization';
+import QuizQuestion from './ongoing/QuizQuestion';
+import QuizResult from './finish/QuizResult';
 
 function QuizView({ modeList }) {
   return (
