@@ -3,7 +3,6 @@ import { NavLink, Switch, Route } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
-import ManageUser from './table/ManageUser';
 import ManageVocabulary from './table/ManageVocabulary';
 
 function ManagementView({ tableList }) {
@@ -13,14 +12,11 @@ function ManagementView({ tableList }) {
         <Col lg={2} />
         <Col lg={7}>
           <Switch>
-            <Route path="/management/user">
-              <ManageUser />
-            </Route>
             <Route path="/management/vocabulary">
               <ManageVocabulary />
             </Route>
             <Route path="/management">
-              <ManageUser />
+              <ManageVocabulary />
             </Route>
           </Switch>
         </Col>

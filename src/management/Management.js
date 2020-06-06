@@ -4,7 +4,7 @@ import ManagementView from './ManagementView';
 
 function Management() {
   const { currentUser } = useContext(UserContext);
-  const tableList = ['user', 'vocabulary'];
+  const tableList = ['vocabulary'];
 
   return currentUser && <ManagementView tableList={tableList} />;
 }
