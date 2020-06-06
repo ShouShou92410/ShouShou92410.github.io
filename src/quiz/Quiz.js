@@ -25,7 +25,6 @@ function Quiz() {
         return (
           <QuizOngoing
             quizSetting={quizSetting}
-            quizResult={quizResult}
             setQuizResult={setQuizResult}
             setQuizState={setQuizState}
           />
