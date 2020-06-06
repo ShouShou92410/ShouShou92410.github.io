@@ -9,9 +9,9 @@ export const QuizEnumeration = Object.freeze({
     SURVIVAL: 'Survival'
   }),
   Format: Object.freeze({
-    JP_ZH: 'Japanese to Chinese',
-    JP_EN: 'Japanese to English',
-    ZH_JP: 'Chinese to Japanese',
-    EN_JP: 'English to Japanese'
+    JP_ZH: 'Japanese → Chinese',
+    JP_EN: 'Japanese → English',
+    ZH_JP: 'Chinese → Japanese',
+    EN_JP: 'English → Japanese'
   })
 });

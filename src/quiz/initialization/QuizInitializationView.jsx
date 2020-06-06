@@ -3,25 +3,40 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import { QuizEnumeration } from '../../utility/Enumeration';
 
-function QuizSettingView() {
+function QuizSettingView({ quizSetting, handleFormChange, handleSubmit }) {
+  const renderOtherSettingString = () => {
+    switch (quizSetting.mode) {
+      case QuizEnumeration.Mode.QUICK:
+        return 'Total Questions';
+      case QuizEnumeration.Mode.SURVIVAL:
+        return 'Total Lives';
+      default:
+        return '';
+    }
+  };
+
   return (
     <>
       <Row>
         <Col lg={2} />
         <Col lg={7}>
-          <h1>Quick Mode</h1>
-          <p>Quick mode description</p>
-          <Form className="mt-4">
+          <h1>Initial Setup</h1>
+          <Form className="mt-4" onSubmit={handleSubmit}>
             <Form.Group as={Row}>
               <Col sm={2} className="text-center">
                 <Form.Label className="mt-2">Quiz Mode</Form.Label>
               </Col>
               <Col sm={10}>
-                <Form.Control as="select" name="mode">
-                  <option>Quick</option>
-                  <option>Manual</option>
-                  <option>Survival</option>
+                <Form.Control
+                  as="select"
+                  name="mode"
+                  value={quizSetting.mode}
+                  onChange={handleFormChange}>
+                  {Object.values(QuizEnumeration.Mode).map((mode) => (
+                    <option key={mode}>{mode}</option>
+                  ))}
                 </Form.Control>
               </Col>
             </Form.Group>
@@ -31,15 +46,14 @@ function QuizSettingView() {
                 <Form.Label className="mt-2">Quiz Format</Form.Label>
               </Col>
               <Col sm={10}>
-                <Form.Control as="select" name="format">
-                  {/* JP → US */}
-                  <option>&#x1f1ef;&#x1f1f5; → &#x1F1FA;&#x1F1F8;</option>
-                  {/* JP → TW */}
-                  <option>&#x1f1ef;&#x1f1f5; → &#x1F1F9;&#x1F1FC;</option>
-                  {/* US → JP */}
-                  <option>&#x1F1FA;&#x1F1F8; → &#x1f1ef;&#x1f1f5;</option>
-                  {/* TW → JP */}
-                  <option>&#x1F1F9;&#x1F1FC; → &#x1f1ef;&#x1f1f5;</option>
+                <Form.Control
+                  as="select"
+                  name="format"
+                  value={quizSetting.format}
+                  onChange={handleFormChange}>
+                  {Object.values(QuizEnumeration.Format).map((format) => (
+                    <option key={format}>{format}</option>
+                  ))}
                 </Form.Control>
               </Col>
             </Form.Group>
@@ -47,26 +61,13 @@ function QuizSettingView() {
             {/* Quick Mode */}
             <Form.Group as={Row}>
               <Col sm={2} className="text-center">
-                <Form.Label className="mt-2">Total Question</Form.Label>
+                <Form.Label className="mt-2">{renderOtherSettingString()}</Form.Label>
               </Col>
               <Col sm={10}>
-                {/* Only accepts int, https://stackoverflow.com/questions/43067719/how-to-allow-only-numbers-in-textbox-in-reactjs */}
-                <Form.Control as="input" />
+                <Form.Control as="input" name="total" onChange={handleFormChange} />
               </Col>
             </Form.Group>
 
-            {/* Manual Mode, might be too hard to create a selection list */}
-
-            {/* Survival Mode */}
-            <Form.Group as={Row}>
-              <Col sm={2} className="text-center">
-                <Form.Label className="mt-2">Total Lives</Form.Label>
-              </Col>
-              <Col sm={10}>
-                {/* Only accepts int, https://stackoverflow.com/questions/43067719/how-to-allow-only-numbers-in-textbox-in-reactjs */}
-                <Form.Control as="input" />
-              </Col>
-            </Form.Group>
             <Row>
               <Col sm={4} />
               <Col sm={4} className="text-center">
@@ -79,7 +80,7 @@ function QuizSettingView() {
           </Form>
         </Col>
         <Col lg={3}>
-          <h4>description</h4>
+          <h4>Quick mode is... Survival mode is...</h4>
         </Col>
       </Row>
     </>

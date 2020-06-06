@@ -7,10 +7,7 @@ function Quiz() {
   const [quizState, setQuizState] = useState(QuizEnumeration.State.INITIALIZATION);
   const [quizSetting, setQuizSetting] = useState({
     mode: QuizEnumeration.Mode.QUICK,
-    format: QuizEnumeration.Format.JP_EN,
-    otherSetting: {
-      totalQuestion: 10
-    }
+    format: QuizEnumeration.Format.JP_EN
   });
 
   const renderView = () => {
