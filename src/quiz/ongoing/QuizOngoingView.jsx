@@ -1,20 +1,15 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import QuizSetting from './initialization/QuizInitialization';
-import QuizResult from './finish/QuizResult';
+import QuizQuestion from './QuizQuestion';
 
-function QuizView({ modeList }) {
+function QuizOngoingView() {
   return (
     <>
       <Row>
         <Col lg={2} />
         <Col lg={7}>
-          <QuizSetting />
           <QuizQuestion />
-          <QuizResult />
-          <QuizResult />
-          <QuizResult />
         </Col>
         <Col lg={2}>
           <h4>description</h4>
@@ -24,4 +19,4 @@ function QuizView({ modeList }) {
   );
 }
 
-export default QuizView;
+export default QuizOngoingView;

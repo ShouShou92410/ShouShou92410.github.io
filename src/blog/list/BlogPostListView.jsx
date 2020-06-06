@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import BlogPostCardView from './BlogPostCardView';
 
-function BlogPostListView({ currentUser, postList }) {
+function BlogPostListView({ currentUser, postArray }) {
   return (
     <>
       <Row>
@@ -21,7 +21,7 @@ function BlogPostListView({ currentUser, postList }) {
         )}
       </Row>
       <hr />
-      {postList.map((post) => (
+      {postArray.map((post) => (
         <BlogPostCardView key={post.postID} post={post} />
       ))}
     </>

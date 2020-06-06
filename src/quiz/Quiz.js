@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import QuizInitialization from './initialization/QuizInitialization';
 import { QuizEnumeration } from '../utility/Enumeration';
+import QuizInitialization from './initialization/QuizInitialization';
+import QuizOngoing from './ongoing/QuizOngoing';
 
-/* Manages quiz settings, question generation, result displays */
 function Quiz() {
   const [quizState, setQuizState] = useState(QuizEnumeration.State.INITIALIZATION);
   const [quizSetting, setQuizSetting] = useState({
     mode: QuizEnumeration.Mode.QUICK,
     format: QuizEnumeration.Format.JP_EN
   });
+  const [quizResult, setQuizResult] = useState([]);
 
   const renderView = () => {
     switch (quizState) {
@@ -21,7 +22,14 @@ function Quiz() {
           />
         );
       case QuizEnumeration.State.ONGOING:
-        return;
+        return (
+          <QuizOngoing
+            quizSetting={quizSetting}
+            quizResult={quizResult}
+            setQuizResult={setQuizResult}
+            setQuizState={setQuizState}
+          />
+        );
       case QuizEnumeration.State.FINISH:
         return;
       default:

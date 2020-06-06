@@ -79,7 +79,7 @@ function QuizSettingView({ quizSetting, handleFormChange, handleSubmit }) {
             </Row>
           </Form>
         </Col>
-        <Col lg={3}>
+        <Col lg={2}>
           <h4>Quick mode is... Survival mode is...</h4>
         </Col>
       </Row>

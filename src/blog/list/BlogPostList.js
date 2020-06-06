@@ -6,12 +6,12 @@ import BlogPostListView from './BlogPostListView';
 function BlogPostList() {
   const { currentUser } = useContext(UserContext);
 
-  const [postList, setPostList] = useState([]);
+  const [postArray, setPostArray] = useState([]);
 
   useEffect(() => {
     getAllBlogPost().then((snapshot) => {
       // Object.entries() turns snapshot.val() into [key, value]
-      setPostList(
+      setPostArray(
         Object.entries(snapshot.val() || [])
           .reverse()
           .map((post) => {
@@ -24,7 +24,7 @@ function BlogPostList() {
     });
   }, []);
 
-  return <BlogPostListView currentUser={currentUser} postList={postList} />;
+  return <BlogPostListView currentUser={currentUser} postArray={postArray} />;
 }
 
 export default BlogPostList;
