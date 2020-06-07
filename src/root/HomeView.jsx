@@ -16,6 +16,7 @@ function HomeView() {
             page, you can check out the source code{' '}
             <a
               href="https://github.com/ShouShou92410/ShouShou92410.github.io/tree/Source-Code"
+              rel="noopener noreferrer"
               target="_blank">
               Here
             </a>

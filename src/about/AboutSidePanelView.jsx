@@ -16,13 +16,16 @@ function AboutSidePanelView() {
         </p>
       </Row>
       <Row className="justify-content-md-center">
-        <a href="https://github.com/ShouShou92410" target="_blank">
+        <a href="https://github.com/ShouShou92410" rel="noopener noreferrer" target="_blank">
           <Image src={`${process.env.PUBLIC_URL}/github.png`} />
         </a>
-        <a href="https://www.linkedin.com/in/yu-hsiang-wen-b61745144/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/yu-hsiang-wen-b61745144/"
+          rel="noopener noreferrer"
+          target="_blank">
           <Image src={`${process.env.PUBLIC_URL}/linkedin.png`} />
         </a>
-        <a href="https://steamcommunity.com/id/Seavanas" target="_blank">
+        <a href="https://steamcommunity.com/id/Seavanas" rel="noopener noreferrer" target="_blank">
           <Image src={`${process.env.PUBLIC_URL}/steam.png`} />
         </a>
       </Row>

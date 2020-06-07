@@ -18,7 +18,7 @@ function BlogPostRead() {
         ...snapshot.val()
       });
     });
-  }, []);
+  }, [ID]);
 
   const handleDelete = () => {
     deleteBlogPost(ID);

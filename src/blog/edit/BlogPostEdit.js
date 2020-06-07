@@ -18,7 +18,7 @@ function BlogPostEdit() {
         ...snapshot.val()
       });
     });
-  }, []);
+  }, [ID]);
 
   const handleFormChange = (e) => setFormInput({ ...formInput, [e.target.name]: e.target.value });
 
