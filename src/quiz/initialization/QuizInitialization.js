@@ -6,13 +6,13 @@ function QuizInitialization({ quizSetting, setQuizSetting, setQuizState }) {
   const validateFormInput = () => {
     const regex = /^[0-9\b]+$/;
 
-    if (!regex.test(quizSetting.total)) {
+    if (!regex.test(quizSetting.total) || quizSetting.total < 0) {
       switch (quizSetting.mode) {
         case QuizEnumeration.Mode.QUICK:
-          alert('Please enter a number for Total Questions.');
+          alert('Please enter a number greater than 0 for Total Questions.');
           return false;
         case QuizEnumeration.Mode.SURVIVAL:
-          alert('Please enter a number for Total Lives.');
+          alert('Please enter a number greater than 0 for Total Lives.');
           return false;
         default:
           alert('');

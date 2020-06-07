@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { QuizEnumeration } from '../utility/Enumeration';
 import QuizInitialization from './initialization/QuizInitialization';
-import QuizOngoing from './ongoing/QuizOngoing';
+import QuizQuickOngoing from './ongoing/quick/QuizQuickOngoing';
 
 function Quiz() {
   const [quizState, setQuizState] = useState(QuizEnumeration.State.INITIALIZATION);
@@ -23,13 +23,26 @@ function Quiz() {
           />
         );
       case QuizEnumeration.State.ONGOING:
-        return (
-          <QuizOngoing
-            quizSetting={quizSetting}
-            setQuizResult={setQuizResult}
-            setQuizState={setQuizState}
-          />
-        );
+        switch (quizSetting.mode) {
+          case QuizEnumeration.Mode.QUICK:
+            return (
+              <QuizQuickOngoing
+                quizSetting={quizSetting}
+                setQuizResult={setQuizResult}
+                setQuizState={setQuizState}
+              />
+            );
+          case QuizEnumeration.Mode.SURVIVAL:
+            return (
+              <QuizQuickOngoing
+                quizSetting={quizSetting}
+                setQuizResult={setQuizResult}
+                setQuizState={setQuizState}
+              />
+            );
+          default:
+            return;
+        }
       case QuizEnumeration.State.FINISH:
         return;
       default:

@@ -72,34 +72,110 @@ export const insertVocabulary = ({ chinese, english, gojuuon, kanji, partofspeec
     .set({ chinese, english, gojuuon, kanji, partofspeech });
 };
 
+/* Move login to a back-end server in the future */
 export const getVocabularyQuestion = (quizSetting) => {
   return new Promise((resolve, reject) => {
     firebaseJsonToArray(database.ref('/vocabulary').once('value'))
       .then((allVocabulary) => {
-        let questionArray = [];
-        switch (quizSetting.mode) {
-          case QuizEnumeration.Mode.QUICK:
-            questionArray = shuffleArray(allVocabulary).slice(0, quizSetting.total);
+        let relevantVocabularies = [];
+
+        switch (quizSetting.format) {
+          case QuizEnumeration.Format.JPK_ZH:
+          case QuizEnumeration.Format.ZH_JPK:
+          case QuizEnumeration.Format.JPK_EN:
+          case QuizEnumeration.Format.EN_JPK:
+            allVocabulary = allVocabulary.filter((vocab) => vocab.kanji);
             break;
-          case QuizEnumeration.Mode.SURVIVAL:
-            questionArray = shuffleArray(allVocabulary);
+          default:
             break;
         }
 
-        questionArray = questionArray.map((question) => {
+        switch (quizSetting.mode) {
+          case QuizEnumeration.Mode.QUICK:
+            relevantVocabularies = shuffleArray(allVocabulary).slice(0, quizSetting.total);
+            break;
+          case QuizEnumeration.Mode.SURVIVAL:
+            relevantVocabularies = shuffleArray(allVocabulary);
+            break;
+          default:
+            break;
+        }
+
+        const questions = relevantVocabularies.map((vocabulary, index) => {
+          let question = {
+            questionNumber: index + 1,
+            ID: vocabulary.ID,
+            partofspeech: vocabulary.partofspeech
+          };
+          let questionText,
+            answerText = '';
           let options = shuffleArray(allVocabulary).slice(0, 4);
 
           const questionIndex = options.findIndex((option) => option.ID === question.ID);
           const randomIndex = Math.floor(Math.random() * 4);
-          if (questionIndex === -1) options.splice(randomIndex, 1, question);
+          if (questionIndex === -1) options.splice(randomIndex, 1, vocabulary);
 
-          //base on setting format, options array only contains string
+          switch (quizSetting.format) {
+            case QuizEnumeration.Format.JPK_ZH:
+              questionText = vocabulary.kanji;
+              options = options.map((option) => {
+                return { ID: option.ID, value: option.chinese };
+              });
+              break;
+            case QuizEnumeration.Format.JPNK_ZH:
+              questionText = vocabulary.gojuuon;
+              options = options.map((option) => {
+                return { ID: option.ID, value: option.chinese };
+              });
+              break;
+            case QuizEnumeration.Format.ZH_JPK:
+              questionText = vocabulary.chinese;
+              options = options.map((option) => {
+                return { ID: option.ID, value: option.kanji };
+              });
+              break;
+            case QuizEnumeration.Format.ZH_JPNK:
+              questionText = vocabulary.chinese;
+              options = options.map((option) => {
+                return { ID: option.ID, value: option.gojuuon };
+              });
+              break;
+            case QuizEnumeration.Format.JPK_EN:
+              questionText = vocabulary.kanji;
+              options = options.map((option) => {
+                return { ID: option.ID, value: option.english };
+              });
+              break;
+            case QuizEnumeration.Format.JPNK_EN:
+              questionText = vocabulary.gojuuon;
+              options = options.map((option) => {
+                return { ID: option.ID, value: option.english };
+              });
+              break;
+            case QuizEnumeration.Format.EN_JPK:
+              questionText = vocabulary.english;
+              options = options.map((option) => {
+                return { ID: option.ID, value: option.kanji };
+              });
+              break;
+            case QuizEnumeration.Format.EN_JPNK:
+              questionText = vocabulary.english;
+              options = options.map((option) => {
+                return { ID: option.ID, value: option.gojuuon };
+              });
+              break;
+            default:
+              break;
+          }
+
+          question['question'] = questionText;
           question['options'] = options;
 
           return question;
         });
 
-        resolve(questionArray);
+        console.log(questions);
+        resolve(questions);
       })
       .catch((err) => reject(err));
   });

@@ -5,27 +5,35 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 
-function QuizQuestionView({ vocabQuestion }) {
+function QuizQuestionView({ vocabQuestion, handleOptionSelect, handleConfirm }) {
   return (
     <>
       {/* Card border, show/hide alerts */}
       <Card border="danger">
-        <Card.Header>Question 1</Card.Header>
+        <Card.Header>Question {vocabQuestion.questionNumber}</Card.Header>
         <Card.Body className="text-center">
           <Card.Title className="mt-3 mb-5">
-            <h1>あか</h1>
+            <h1>{vocabQuestion.question}</h1>
           </Card.Title>
           <div className="mt-5 mb-3">
             <Row className="m-3">
               <Col sm={3} />
               <Col sm={3}>
-                <Button variant="outline-dark" block>
-                  Red
+                <Button
+                  variant="outline-dark"
+                  block
+                  value={vocabQuestion.options[0].ID}
+                  onClick={handleOptionSelect}>
+                  {vocabQuestion.options[0].value}
                 </Button>
               </Col>
               <Col sm={3}>
-                <Button variant="outline-dark" block>
-                  Blue
+                <Button
+                  variant="outline-dark"
+                  block
+                  value={vocabQuestion.options[1].ID}
+                  onClick={handleOptionSelect}>
+                  {vocabQuestion.options[1].value}
                 </Button>
               </Col>
               <Col sm={3} />
@@ -33,13 +41,21 @@ function QuizQuestionView({ vocabQuestion }) {
             <Row className="m-3">
               <Col sm={3} />
               <Col sm={3}>
-                <Button variant="outline-dark" block>
-                  Yellow
+                <Button
+                  variant="outline-dark"
+                  block
+                  value={vocabQuestion.options[2].ID}
+                  onClick={handleOptionSelect}>
+                  {vocabQuestion.options[2].value}
                 </Button>
               </Col>
               <Col sm={3}>
-                <Button variant="outline-dark" block>
-                  Green
+                <Button
+                  variant="outline-dark"
+                  block
+                  value={vocabQuestion.options[3].ID}
+                  onClick={handleOptionSelect}>
+                  {vocabQuestion.options[3].value}
                 </Button>
               </Col>
               <Col sm={3} />
@@ -48,7 +64,12 @@ function QuizQuestionView({ vocabQuestion }) {
           <Row className="m-3">
             <Col sm={3} />
             <Col sm={6}>
-              <Button variant="secondary" block>
+              <Button
+                variant="secondary"
+                block
+                onClick={() => {
+                  handleConfirm();
+                }}>
                 Confirm
               </Button>
             </Col>
