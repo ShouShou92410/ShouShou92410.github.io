@@ -7,7 +7,7 @@ function Quiz() {
   const [quizState, setQuizState] = useState(QuizEnumeration.State.INITIALIZATION);
   const [quizSetting, setQuizSetting] = useState({
     mode: QuizEnumeration.Mode.QUICK,
-    format: QuizEnumeration.Format.JP_EN,
+    format: QuizEnumeration.Format.JPK_EN,
     total: ''
   });
   const [quizResult, setQuizResult] = useState([]);

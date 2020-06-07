@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 
-function QuizQuestionView({ vocabQuestion, optionArray }) {
+function QuizQuestionView({ vocabQuestion }) {
   return (
     <>
       {/* Card border, show/hide alerts */}

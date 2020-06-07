@@ -6,16 +6,16 @@ import BlogPostListView from './BlogPostListView';
 function BlogPostList() {
   const { currentUser } = useContext(UserContext);
 
-  const [postArray, setPostArray] = useState([]);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     const fetchAllBlogPost = async () => {
-      setPostArray((await getAllBlogPost()).reverse());
+      setPosts((await getAllBlogPost()).reverse());
     };
     fetchAllBlogPost();
   }, []);
 
-  return <BlogPostListView currentUser={currentUser} postArray={postArray} />;
+  return <BlogPostListView currentUser={currentUser} posts={posts} />;
 }
 
 export default BlogPostList;

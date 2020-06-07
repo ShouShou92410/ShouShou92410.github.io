@@ -76,12 +76,42 @@ export const getVocabularyQuestion = (quizSetting) => {
   return new Promise((resolve, reject) => {
     firebaseJsonToArray(database.ref('/vocabulary').once('value'))
       .then((allVocabulary) => {
-        resolve(allVocabulary);
-        // if (quizSetting.mode === QuizEnumeration.Mode.QUICK) allVocabulary.
+        let questionArray = [];
+        switch (quizSetting.mode) {
+          case QuizEnumeration.Mode.QUICK:
+            questionArray = shuffleArray(allVocabulary).slice(0, quizSetting.total);
+            break;
+          case QuizEnumeration.Mode.SURVIVAL:
+            questionArray = shuffleArray(allVocabulary);
+            break;
+        }
+
+        questionArray = questionArray.map((question) => {
+          let options = shuffleArray(allVocabulary).slice(0, 4);
+
+          const questionIndex = options.findIndex((option) => option.ID === question.ID);
+          const randomIndex = Math.floor(Math.random() * 4);
+          if (questionIndex === -1) options.splice(randomIndex, 1, question);
+
+          //base on setting format, options array only contains string
+          question['options'] = options;
+
+          return question;
+        });
+
+        resolve(questionArray);
       })
       .catch((err) => reject(err));
   });
 };
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
 function getCurrentDateTime() {
   let now = new Date();

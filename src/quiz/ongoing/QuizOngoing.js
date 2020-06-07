@@ -3,17 +3,18 @@ import { getVocabularyQuestion } from '../../services/Firebase';
 import QuizOngoingView from './QuizOngoingView';
 
 function QuizOngoing({ quizSetting, setQuizResult, setQuizState }) {
-  const [questionArray, setQuestionArray] = useState([]);
-  const [resultArray, setResultArray] = useState([]);
+  const [questions, setQuestions] = useState([]);
+  const [results, setResults] = useState([]);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState({});
 
   //setCurrentQuestion, with options
-  //setResultArray
-  //if last question, setQuizResult with resultArray
+  //setResults
+  //if last question, setQuizResult with results
   useEffect(() => {
     const fetchQuestion = async () => {
-      setQuestionArray(await getVocabularyQuestion(quizSetting));
+      console.log(await getVocabularyQuestion(quizSetting));
+      setQuestions(await getVocabularyQuestion(quizSetting));
     };
     fetchQuestion();
   }, []);
