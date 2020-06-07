@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 //import 'firebase/analytics';
 import 'firebase/auth';
+import { QuizEnumeration } from '../utility/Enumeration';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -35,7 +36,7 @@ export const signOut = () => {
 const database = firebase.database();
 
 export const getAllBlogPost = () => {
-  return database.ref('/blog').once('value');
+  return firebaseJsonToArray(database.ref('/blog').once('value'));
 };
 
 export const getBlogPost = (id) => {
@@ -64,12 +65,22 @@ export const createBlogPost = ({ title, content }) => {
       uid: firebase.auth().currentUser.uid
     });
 };
-
 export const insertVocabulary = ({ chinese, english, gojuuon, kanji, partofspeech }) => {
   database
     .ref('/vocabulary')
     .push()
     .set({ chinese, english, gojuuon, kanji, partofspeech });
+};
+
+export const getVocabularyQuestion = (quizSetting) => {
+  return new Promise((resolve, reject) => {
+    firebaseJsonToArray(database.ref('/vocabulary').once('value'))
+      .then((allVocabulary) => {
+        resolve(allVocabulary);
+        // if (quizSetting.mode === QuizEnumeration.Mode.QUICK) allVocabulary.
+      })
+      .catch((err) => reject(err));
+  });
 };
 
 function getCurrentDateTime() {
@@ -78,4 +89,19 @@ function getCurrentDateTime() {
   let time = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
   return `${date} ${time}`;
+}
+
+/* Converts firebase's records from json structure to array structure. */
+function firebaseJsonToArray(getPromise) {
+  return new Promise((resolve, reject) => {
+    getPromise
+      .then((snapshot) => {
+        resolve(
+          Object.entries(snapshot.val() || []).map((record) => {
+            return { ID: record[0], ...record[1] };
+          })
+        );
+      })
+      .catch((err) => reject(err));
+  });
 }

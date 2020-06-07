@@ -22,7 +22,6 @@ function BlogPostEditView({ formInput, handleFormChange, handleSubmit }) {
 
         <Form.Group>
           <Form.Control
-            a
             as="textarea"
             rows="10"
             placeholder="Post content"

@@ -9,19 +9,10 @@ function BlogPostList() {
   const [postArray, setPostArray] = useState([]);
 
   useEffect(() => {
-    getAllBlogPost().then((snapshot) => {
-      // Object.entries() turns snapshot.val() into [key, value]
-      setPostArray(
-        Object.entries(snapshot.val() || [])
-          .reverse()
-          .map((post) => {
-            return {
-              postID: post[0],
-              ...post[1]
-            };
-          })
-      );
-    });
+    const fetchAllBlogPost = async () => {
+      setPostArray((await getAllBlogPost()).reverse());
+    };
+    fetchAllBlogPost();
   }, []);
 
   return <BlogPostListView currentUser={currentUser} postArray={postArray} />;

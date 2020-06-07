@@ -20,7 +20,7 @@ function BlogPostReadView({ currentUser, post, handleDelete }) {
                     variant="warning"
                     size="sm"
                     as={Link}
-                    to={`/blog/edit/${post.postID}`}
+                    to={`/blog/edit/${post.ID}`}
                     className="w-100">
                     Edit
                   </Button>

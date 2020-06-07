@@ -22,10 +22,7 @@ function BlogPostCardView({ post }) {
         </Card.Header>
         <Card.Body className="pb-1">
           <Card.Text className="mb-0 blog-post-preview">{post.content}</Card.Text>
-          <Card.Link
-            as={Link}
-            to={`/blog/read/${post.postID}`}
-            className="dark float-right text-sm">
+          <Card.Link as={Link} to={`/blog/read/${post.ID}`} className="dark float-right text-sm">
             read more
           </Card.Link>
         </Card.Body>

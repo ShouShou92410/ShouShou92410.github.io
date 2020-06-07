@@ -22,7 +22,7 @@ function BlogPostListView({ currentUser, postArray }) {
       </Row>
       <hr />
       {postArray.map((post) => (
-        <BlogPostCardView key={post.postID} post={post} />
+        <BlogPostCardView key={post.ID} post={post} />
       ))}
     </>
   );

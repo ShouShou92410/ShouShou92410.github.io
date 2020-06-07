@@ -64,7 +64,12 @@ function QuizSettingView({ quizSetting, handleFormChange, handleSubmit }) {
                 <Form.Label className="mt-2">{renderOtherSettingString()}</Form.Label>
               </Col>
               <Col sm={10}>
-                <Form.Control as="input" name="total" onChange={handleFormChange} />
+                <Form.Control
+                  as="input"
+                  name="total"
+                  value={quizSetting.total}
+                  onChange={handleFormChange}
+                />
               </Col>
             </Form.Group>
 
