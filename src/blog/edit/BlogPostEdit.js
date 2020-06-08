@@ -7,18 +7,18 @@ import BlogPostEditView from './BlogPostEditView';
 function BlogPostEdit() {
   const { currentUser } = useContext(UserContext);
 
-  const [postID, setPostID] = useState(window.location.href.split('/').pop());
-  const [formInput, setFormInput] = useState({});
+  const [ID, setID] = useState(window.location.href.split('/').pop());
+  const [formInput, setFormInput] = useState({ title: '', content: '' });
   const history = useHistory();
 
   useEffect(() => {
-    getBlogPost(postID).then((snapshot) => {
+    getBlogPost(ID).then((snapshot) => {
       setFormInput({
-        postID: postID,
+        ID: ID,
         ...snapshot.val()
       });
     });
-  }, []);
+  }, [ID]);
 
   const handleFormChange = (e) => setFormInput({ ...formInput, [e.target.name]: e.target.value });
 
@@ -30,9 +30,9 @@ function BlogPostEdit() {
     if (!formInput.content) error += 'Invalid content.\n';
     if (error) alert(error);
     else {
-      editBlogPost({ id: postID, ...formInput });
+      editBlogPost({ id: ID, ...formInput });
       setFormInput({});
-      setPostID(null);
+      setID(null);
       history.push('/blog');
     }
   };

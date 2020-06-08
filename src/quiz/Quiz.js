@@ -1,11 +1,75 @@
-import React from 'react';
-import QuizView from './QuizView';
+import React, { useState } from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { QuizEnumeration } from '../utility/Enumeration';
+import QuizInitialization from './initialization/QuizInitialization';
+import QuizQuickOngoing from './ongoing/quick/QuizQuickOngoing';
+import QuizFinish from './finish/QuizFinish';
 
 function Quiz() {
-  const modeList = ['quick', 'manual', 'survival'];
-  /* Manages quiz settings, question generation, result displays */
+  const [quizState, setQuizState] = useState(QuizEnumeration.State.INITIALIZATION);
+  const [quizSetting, setQuizSetting] = useState({
+    mode: QuizEnumeration.Mode.QUICK,
+    format: QuizEnumeration.Format.JPK_EN,
+    total: ''
+  });
+  const [quizResults, setQuizResults] = useState([]);
 
-  return <QuizView modeList={modeList} />;
+  const renderView = () => {
+    switch (quizState) {
+      case QuizEnumeration.State.INITIALIZATION:
+        return (
+          <QuizInitialization
+            quizSetting={quizSetting}
+            setQuizSetting={setQuizSetting}
+            setQuizState={setQuizState}
+          />
+        );
+      case QuizEnumeration.State.ONGOING:
+        switch (quizSetting.mode) {
+          case QuizEnumeration.Mode.QUICK:
+            return (
+              <QuizQuickOngoing
+                quizSetting={quizSetting}
+                setQuizResults={setQuizResults}
+                setQuizState={setQuizState}
+              />
+            );
+          case QuizEnumeration.Mode.SURVIVAL:
+            return (
+              <QuizQuickOngoing
+                quizSetting={quizSetting}
+                setQuizResults={setQuizResults}
+                setQuizState={setQuizState}
+              />
+            );
+          default:
+            return;
+        }
+      case QuizEnumeration.State.FINISH:
+        return <QuizFinish quizResults={quizResults} setQuizState={setQuizState} />;
+      default:
+        return (
+          <QuizInitialization
+            quizSetting={quizSetting}
+            setQuizSetting={setQuizSetting}
+            setQuizState={setQuizState}
+          />
+        );
+    }
+  };
+
+  return (
+    <>
+      <Row>
+        <Col lg={2} />
+        <Col lg={7}>{renderView()}</Col>
+        <Col lg={2}>
+          <h4>description</h4>
+        </Col>
+      </Row>
+    </>
+  );
 }
 
 export default Quiz;

@@ -33,7 +33,7 @@ function CSVtoJSON(csvFile) {
 
         fileContent = fileContent.map((x) => x.split(','));
 
-        let keys = fileContent.shift().map((key) => key.trim().toLowerCase()); //Remove first element, which is a list of keys
+        let keys = fileContent.shift().map((key) => key.trim().toLowerCase()); //Remove first element, which is an array of keys
         if (keys.length === [...new Set(keys)].length) {
           const jsonResult = fileContent.map((row) => {
             let rowObject = {};

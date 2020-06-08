@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import ManageVocabulary from './table/ManageVocabulary';
 
-function ManagementView({ tableList }) {
+function ManagementView({ tables }) {
   return (
     <>
       <Row>
@@ -22,7 +22,7 @@ function ManagementView({ tableList }) {
         </Col>
         <Col lg={2}>
           <Nav className="d-block">
-            {tableList.map((table) => (
+            {tables.map((table) => (
               <Nav.Link
                 key={table}
                 as={NavLink}

@@ -7,22 +7,22 @@ import BlogPostReadView from './BlogPostReadView';
 function BlogPostRead() {
   const { currentUser } = useContext(UserContext);
 
-  const [postID, setPostID] = useState(window.location.href.split('/').pop());
+  const [ID, setID] = useState(window.location.href.split('/').pop());
   const [post, setPost] = useState({});
   const history = useHistory();
 
   useEffect(() => {
-    getBlogPost(postID).then((snapshot) => {
+    getBlogPost(ID).then((snapshot) => {
       setPost({
-        postID: postID,
+        ID: ID,
         ...snapshot.val()
       });
     });
-  }, []);
+  }, [ID]);
 
   const handleDelete = () => {
-    deleteBlogPost(postID);
-    setPostID(null);
+    deleteBlogPost(ID);
+    setID(null);
     history.push('/blog');
   };
 
