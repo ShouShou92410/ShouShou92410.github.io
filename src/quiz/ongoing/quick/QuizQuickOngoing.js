@@ -3,7 +3,7 @@ import { getVocabularyQuestion } from '../../../services/Firebase';
 import QuizQuickOngoingView from './QuizQuickOngoingView';
 import { QuizEnumeration } from '../../../utility/Enumeration';
 
-function QuizQuickOngoing({ quizSetting, setQuizResult, setQuizState }) {
+function QuizQuickOngoing({ quizSetting, setQuizResults, setQuizState }) {
   const [questions, setQuestions] = useState([]);
   const [results, setResults] = useState([]);
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -11,24 +11,24 @@ function QuizQuickOngoing({ quizSetting, setQuizResult, setQuizState }) {
 
   //setCurrentQuestion, with options
   //setResults
-  //if last question, setQuizResult with results
+  //if last question, setQuizResults with results
   useEffect(() => {
     const fetchQuestion = async () => {
       setQuestions(await getVocabularyQuestion(quizSetting));
     };
     fetchQuestion();
-  }, []);
+  }, [quizSetting]);
 
   useEffect(() => {
     if (questions.length > 0 && questionIndex === questions.length) {
-      setQuizResult(results);
+      setQuizResults(results);
       setQuizState(QuizEnumeration.State.FINISH);
     } else {
       setCurrentQuestion(questions[questionIndex]);
     }
-  }, [questions, questionIndex]);
+  }, [questions, questionIndex, results, setQuizResults, setQuizState]);
 
-  const handleAfterConfirm = (selectedOptionID) => {
+  const handleNextQuestion = (selectedOptionID) => {
     setResults([...results, { ...currentQuestion, selectedOptionID: selectedOptionID }]);
     setQuestionIndex(questionIndex + 1);
   };
@@ -37,7 +37,7 @@ function QuizQuickOngoing({ quizSetting, setQuizResult, setQuizState }) {
     (currentQuestion && (
       <QuizQuickOngoingView
         currentQuestion={currentQuestion}
-        handleAfterConfirm={handleAfterConfirm}
+        handleNextQuestion={handleNextQuestion}
       />
     )) || <h1>loading...</h1>
   );

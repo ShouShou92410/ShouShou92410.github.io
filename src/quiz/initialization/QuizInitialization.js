@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { QuizEnumeration } from '../../utility/Enumeration';
 import QuizInitializationView from './QuizInitializationView';
 
 function QuizInitialization({ quizSetting, setQuizSetting, setQuizState }) {
+  useEffect(() => {
+    setQuizSetting({
+      mode: QuizEnumeration.Mode.QUICK,
+      format: QuizEnumeration.Format.JPK_EN,
+      total: ''
+    });
+  }, [setQuizSetting]);
+
   const validateFormInput = () => {
     const regex = /^[0-9\b]+$/;
 

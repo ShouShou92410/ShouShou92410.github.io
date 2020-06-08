@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { QuizEnumeration } from '../utility/Enumeration';
 import QuizInitialization from './initialization/QuizInitialization';
 import QuizQuickOngoing from './ongoing/quick/QuizQuickOngoing';
+import QuizFinish from './finish/QuizFinish';
 
 function Quiz() {
   const [quizState, setQuizState] = useState(QuizEnumeration.State.INITIALIZATION);
@@ -10,7 +13,7 @@ function Quiz() {
     format: QuizEnumeration.Format.JPK_EN,
     total: ''
   });
-  const [quizResult, setQuizResult] = useState([]);
+  const [quizResults, setQuizResults] = useState([]);
 
   const renderView = () => {
     switch (quizState) {
@@ -28,7 +31,7 @@ function Quiz() {
             return (
               <QuizQuickOngoing
                 quizSetting={quizSetting}
-                setQuizResult={setQuizResult}
+                setQuizResults={setQuizResults}
                 setQuizState={setQuizState}
               />
             );
@@ -36,7 +39,7 @@ function Quiz() {
             return (
               <QuizQuickOngoing
                 quizSetting={quizSetting}
-                setQuizResult={setQuizResult}
+                setQuizResults={setQuizResults}
                 setQuizState={setQuizState}
               />
             );
@@ -44,7 +47,7 @@ function Quiz() {
             return;
         }
       case QuizEnumeration.State.FINISH:
-        return;
+        return <QuizFinish quizResults={quizResults} setQuizState={setQuizState} />;
       default:
         return (
           <QuizInitialization
@@ -56,7 +59,17 @@ function Quiz() {
     }
   };
 
-  return renderView();
+  return (
+    <>
+      <Row>
+        <Col lg={2} />
+        <Col lg={7}>{renderView()}</Col>
+        <Col lg={2}>
+          <h4>description</h4>
+        </Col>
+      </Row>
+    </>
+  );
 }
 
 export default Quiz;

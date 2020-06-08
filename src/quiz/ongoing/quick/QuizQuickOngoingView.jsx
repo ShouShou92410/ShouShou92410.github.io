@@ -1,20 +1,12 @@
 import React from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import QuizQuestion from '../QuizQuestion';
+import QuizQuestionCard from '../QuizQuestionCard';
 
-function QuizQuickOngoingView({ currentQuestion, handleAfterConfirm }) {
+function QuizQuickOngoingView({ currentQuestion, handleNextQuestion }) {
   return (
     <>
-      <Row>
-        <Col lg={2} />
-        <Col lg={7}>
-          <QuizQuestion vocabQuestion={currentQuestion} handleAfterConfirm={handleAfterConfirm} />
-        </Col>
-        <Col lg={2}>
-          <h4>description</h4>
-        </Col>
-      </Row>
+      <h1>Quiz in progress...</h1>
+      <hr />
+      <QuizQuestionCard vocabQuestion={currentQuestion} handleNextQuestion={handleNextQuestion} />
     </>
   );
 }

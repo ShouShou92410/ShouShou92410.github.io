@@ -107,8 +107,7 @@ export const getVocabularyQuestion = (quizSetting) => {
             ID: vocabulary.ID,
             partofspeech: vocabulary.partofspeech
           };
-          let questionText,
-            answerText = '';
+          let questionText = '';
           let options = shuffleArray(allVocabulary).slice(0, 4);
 
           const questionIndex = options.findIndex((option) => option.ID === question.ID);
@@ -174,7 +173,6 @@ export const getVocabularyQuestion = (quizSetting) => {
           return question;
         });
 
-        console.log(questions);
         resolve(questions);
       })
       .catch((err) => reject(err));
