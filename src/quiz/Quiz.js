@@ -64,9 +64,7 @@ function Quiz() {
       <Row>
         <Col lg={2} />
         <Col lg={7}>{renderView()}</Col>
-        <Col lg={2}>
-          <h4>description</h4>
-        </Col>
+        <Col lg={2}>{/* <h4>description</h4> */}</Col>
       </Row>
     </>
   );
