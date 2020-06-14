@@ -6,7 +6,6 @@ import About from '../about/About';
 import Management from '../management/Management';
 import Quiz from '../quiz/Quiz';
 import Blog from '../blog/Blog';
-import Error from '../utility/Error';
 
 function ContentView() {
   return (
@@ -26,7 +25,6 @@ function ContentView() {
         </Route>
         <Route path="/">
           <HomeView />
-          <Error />
         </Route>
       </Switch>
     </Container>
