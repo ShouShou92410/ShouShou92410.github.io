@@ -6,6 +6,7 @@ import QuizInitialization from './initialization/QuizInitialization';
 import QuizQuickOngoing from './ongoing/QuizQuickOngoing';
 import QuizSurvivalOngoing from './ongoing/QuizSurvivalOngoing';
 import QuizFinish from './finish/QuizFinish';
+import Error from '../utility/Error';
 
 function Quiz() {
   const [quizState, setQuizState] = useState(QuizEnumeration.State.INITIALIZATION);
@@ -45,7 +46,7 @@ function Quiz() {
               />
             );
           default:
-            return;
+            return <Error />;
         }
       case QuizEnumeration.State.FINISH:
         return <QuizFinish quizResults={quizResults} setQuizState={setQuizState} />;
