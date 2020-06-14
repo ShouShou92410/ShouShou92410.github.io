@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getVocabularyQuestion } from '../../services/Firebase';
 import QuizOngoingView from './QuizOngoingView';
 import { QuizEnumeration } from '../../utility/Enumeration';
+import Loading from '../../utility/Loading';
 
 function QuizQuickOngoing({ quizSetting, setQuizResults, setQuizState }) {
   const [questions, setQuestions] = useState([]);
@@ -35,9 +36,9 @@ function QuizQuickOngoing({ quizSetting, setQuizResults, setQuizState }) {
   };
 
   return (
-    (currentQuestion && (
+    <Loading isLoading={currentQuestion}>
       <QuizOngoingView currentQuestion={currentQuestion} handleNextQuestion={handleNextQuestion} />
-    )) || <h1>loading...</h1>
+    </Loading>
   );
 }
 
