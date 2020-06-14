@@ -7,10 +7,7 @@ import Button from 'react-bootstrap/Button';
 function QuizResultCardView({ questionResult }) {
   const renderOption = (option) => {
     let buttonVariant = 'outline-dark';
-    if (
-      option.ID === questionResult.selectedOptionID &&
-      questionResult.selectedOptionID !== questionResult.ID
-    )
+    if (option.ID === questionResult.selectedOptionID && !questionResult.isCorrect)
       buttonVariant = 'danger';
     else if (option.ID === questionResult.ID) buttonVariant = 'success';
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import QuizQuestionCard from '../QuizQuestionCard';
+import QuizQuestionCard from './QuizQuestionCard';
 
-function QuizQuickOngoingView({ currentQuestion, handleNextQuestion }) {
+function QuizOngoingView({ currentQuestion, handleNextQuestion }) {
   return (
     <>
       <h1>Quiz in progress...</h1>
@@ -11,4 +11,4 @@ function QuizQuickOngoingView({ currentQuestion, handleNextQuestion }) {
   );
 }
 
-export default QuizQuickOngoingView;
+export default QuizOngoingView;
