@@ -3,7 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { QuizEnumeration } from '../utility/Enumeration';
 import QuizInitialization from './initialization/QuizInitialization';
-import QuizQuickOngoing from './ongoing/quick/QuizQuickOngoing';
+import QuizQuickOngoing from './ongoing/QuizQuickOngoing';
+import QuizSurvivalOngoing from './ongoing/QuizSurvivalOngoing';
 import QuizFinish from './finish/QuizFinish';
 
 function Quiz() {
@@ -37,7 +38,7 @@ function Quiz() {
             );
           case QuizEnumeration.Mode.SURVIVAL:
             return (
-              <QuizQuickOngoing
+              <QuizSurvivalOngoing
                 quizSetting={quizSetting}
                 setQuizResults={setQuizResults}
                 setQuizState={setQuizState}

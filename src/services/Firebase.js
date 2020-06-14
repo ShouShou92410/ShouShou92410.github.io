@@ -95,7 +95,7 @@ export const getVocabularyQuestion = (quizSetting) => {
             relevantVocabularies = shuffleArray(allVocabulary).slice(0, quizSetting.total);
             break;
           case QuizEnumeration.Mode.SURVIVAL:
-            relevantVocabularies = shuffleArray(allVocabulary);
+            relevantVocabularies = shuffleArray(allVocabulary).slice();
             break;
           default:
             break;
