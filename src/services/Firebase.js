@@ -104,8 +104,7 @@ export const getVocabularyQuestion = (quizSetting) => {
         const questions = relevantVocabularies.map((vocabulary, index) => {
           let question = {
             questionNumber: index + 1,
-            ID: vocabulary.ID,
-            partofspeech: vocabulary.partofspeech
+            ID: vocabulary.ID
           };
           let questionText = '';
           let options = shuffleArray(allVocabulary).slice(0, 4);
@@ -142,23 +141,25 @@ export const getVocabularyQuestion = (quizSetting) => {
             case QuizEnumeration.Format.JPK_EN:
               questionText = vocabulary.kanji;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.english };
+                return { ID: option.ID, value: option.english, partofspeech: option.partofspeech };
               });
               break;
             case QuizEnumeration.Format.JPNK_EN:
               questionText = vocabulary.gojuuon;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.english };
+                return { ID: option.ID, value: option.english, partofspeech: option.partofspeech };
               });
               break;
             case QuizEnumeration.Format.EN_JPK:
               questionText = vocabulary.english;
+              question['partofspeech'] = vocabulary.partofspeech;
               options = options.map((option) => {
                 return { ID: option.ID, value: option.kanji };
               });
               break;
             case QuizEnumeration.Format.EN_JPNK:
               questionText = vocabulary.english;
+              question['partofspeech'] = vocabulary.partofspeech;
               options = options.map((option) => {
                 return { ID: option.ID, value: option.gojuuon };
               });

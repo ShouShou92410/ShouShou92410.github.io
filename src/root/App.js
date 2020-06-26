@@ -4,6 +4,7 @@ import { UserContext } from '../utility/Context';
 import { firebase } from '../services/Firebase';
 import MenuBar from './MenuBar';
 import Content from './Content';
+import Loading from '../utility/Loading';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -21,15 +22,15 @@ function App() {
     });
   }, []);
 
-  return authorizing ? (
-    <UserContext.Provider value={{ currentUser }}>
-      <BrowserRouter>
-        <MenuBar />
-        <Content />
-      </BrowserRouter>
-    </UserContext.Provider>
-  ) : (
-    <div>Waiting for auth...</div>
+  return (
+    <Loading isLoading={authorizing} loadingMessage="Waiting for authentication...">
+      <UserContext.Provider value={{ currentUser }}>
+        <BrowserRouter>
+          <MenuBar />
+          <Content />
+        </BrowserRouter>
+      </UserContext.Provider>
+    </Loading>
   );
 }
 

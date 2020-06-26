@@ -23,7 +23,6 @@ function QuizInitialization({ quizSetting, setQuizSetting, setQuizState }) {
           alert('Please enter a number greater than 0 for Total Lives.');
           return false;
         default:
-          alert('');
           return false;
       }
     }

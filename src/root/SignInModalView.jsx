@@ -40,12 +40,10 @@ function SignInModalView({
 
         <Modal.Footer>
           <Button variant="primary" type="submit" disabled={signingIn}>
-            {signingIn ? (
+            {signingIn && (
               <>
                 <Spinner as="span" animation="border" size="sm" />{' '}
               </>
-            ) : (
-              ''
             )}
             Sign In
           </Button>
