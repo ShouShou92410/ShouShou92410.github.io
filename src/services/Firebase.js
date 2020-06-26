@@ -118,49 +118,49 @@ export const getVocabularyQuestion = (quizSetting) => {
             case QuizEnumeration.Format.JPK_ZH:
               questionText = vocabulary.kanji;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.chinese };
+                return { ID: option.ID, value: option.chinese, partofspeech: option.partofspeech };
               });
               break;
             case QuizEnumeration.Format.JPNK_ZH:
               questionText = vocabulary.gojuuon;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.chinese };
+                return { ID: option.ID, value: option.chinese, partofspeech: option.partofspeech };
               });
               break;
             case QuizEnumeration.Format.ZH_JPK:
               questionText = vocabulary.chinese;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.kanji };
+                return { ID: option.ID, value: option.kanji, partofspeech: option.partofspeech };
               });
               break;
             case QuizEnumeration.Format.ZH_JPNK:
               questionText = vocabulary.chinese;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.gojuuon };
+                return { ID: option.ID, value: option.gojuuon, partofspeech: option.partofspeech };
               });
               break;
             case QuizEnumeration.Format.JPK_EN:
               questionText = vocabulary.kanji;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.english };
+                return { ID: option.ID, value: option.english, partofspeech: option.partofspeech };
               });
               break;
             case QuizEnumeration.Format.JPNK_EN:
               questionText = vocabulary.gojuuon;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.english };
+                return { ID: option.ID, value: option.english, partofspeech: option.partofspeech };
               });
               break;
             case QuizEnumeration.Format.EN_JPK:
               questionText = vocabulary.english;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.kanji };
+                return { ID: option.ID, value: option.kanji, partofspeech: option.partofspeech };
               });
               break;
             case QuizEnumeration.Format.EN_JPNK:
               questionText = vocabulary.english;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.gojuuon };
+                return { ID: option.ID, value: option.gojuuon, partofspeech: option.partofspeech };
               });
               break;
             default:

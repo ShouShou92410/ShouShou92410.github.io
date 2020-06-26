@@ -39,7 +39,9 @@ function QuizQuestionCardView({
         <Card.Header>Question {vocabQuestion.questionNumber}</Card.Header>
         <Card.Body className="text-center">
           <Card.Title className="mt-3 mb-5">
-            <h1>{vocabQuestion.question}</h1>
+            <h1>
+              {vocabQuestion.question} ({vocabQuestion.partofspeech})
+            </h1>
           </Card.Title>
           <div className="mt-5 mb-3">
             <Row className="m-3">

@@ -9,7 +9,7 @@ function QuizOptionView({ option, selectedOptionID, isCorrect, handleOptionSelec
       disabled={isCorrect !== null}
       value={option.ID}
       onClick={handleOptionSelect}>
-      {option.value}
+      {option.value} ({option.partofspeech})
     </Button>
   );
 }
