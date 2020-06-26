@@ -40,7 +40,8 @@ function QuizQuestionCardView({
         <Card.Body className="text-center">
           <Card.Title className="mt-3 mb-5">
             <h1>
-              {vocabQuestion.question} ({vocabQuestion.partofspeech})
+              {vocabQuestion.question}{' '}
+              {vocabQuestion.partofspeech && `(${vocabQuestion.partofspeech})`}
             </h1>
           </Card.Title>
           <div className="mt-5 mb-3">

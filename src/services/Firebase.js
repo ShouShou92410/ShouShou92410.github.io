@@ -104,8 +104,7 @@ export const getVocabularyQuestion = (quizSetting) => {
         const questions = relevantVocabularies.map((vocabulary, index) => {
           let question = {
             questionNumber: index + 1,
-            ID: vocabulary.ID,
-            partofspeech: vocabulary.partofspeech
+            ID: vocabulary.ID
           };
           let questionText = '';
           let options = shuffleArray(allVocabulary).slice(0, 4);
@@ -118,25 +117,25 @@ export const getVocabularyQuestion = (quizSetting) => {
             case QuizEnumeration.Format.JPK_ZH:
               questionText = vocabulary.kanji;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.chinese, partofspeech: option.partofspeech };
+                return { ID: option.ID, value: option.chinese };
               });
               break;
             case QuizEnumeration.Format.JPNK_ZH:
               questionText = vocabulary.gojuuon;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.chinese, partofspeech: option.partofspeech };
+                return { ID: option.ID, value: option.chinese };
               });
               break;
             case QuizEnumeration.Format.ZH_JPK:
               questionText = vocabulary.chinese;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.kanji, partofspeech: option.partofspeech };
+                return { ID: option.ID, value: option.kanji };
               });
               break;
             case QuizEnumeration.Format.ZH_JPNK:
               questionText = vocabulary.chinese;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.gojuuon, partofspeech: option.partofspeech };
+                return { ID: option.ID, value: option.gojuuon };
               });
               break;
             case QuizEnumeration.Format.JPK_EN:
@@ -153,14 +152,16 @@ export const getVocabularyQuestion = (quizSetting) => {
               break;
             case QuizEnumeration.Format.EN_JPK:
               questionText = vocabulary.english;
+              question['partofspeech'] = vocabulary.partofspeech;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.kanji, partofspeech: option.partofspeech };
+                return { ID: option.ID, value: option.kanji };
               });
               break;
             case QuizEnumeration.Format.EN_JPNK:
               questionText = vocabulary.english;
+              question['partofspeech'] = vocabulary.partofspeech;
               options = options.map((option) => {
-                return { ID: option.ID, value: option.gojuuon, partofspeech: option.partofspeech };
+                return { ID: option.ID, value: option.gojuuon };
               });
               break;
             default:
