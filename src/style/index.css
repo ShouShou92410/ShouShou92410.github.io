@@ -1,15 +1,17 @@
 #root {
-  min-height: 100vh;
-  height: 100%;
+  height: 100vh;
   background-color: rgb(209, 209, 209);
+  background-image: url('/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-p {
+/* p {
   font-size: 18px;
   white-space: pre-wrap;
   margin-left: 1em !important;
   margin-right: 1em !important;
-}
+} */
 
 hr {
   margin: 0 !important;
@@ -53,4 +55,17 @@ img {
   max-height: 4.5em;
   overflow: hidden;
   margin: 0em !important;
+}
+
+.about-card {
+  background-color: rgb(108, 117, 125, 0.8) !important;
+  border: 0px !important;
+}
+
+.about-card-list-item {
+  color: #212529 !important;
+  background-color:rgba(130, 138, 146, 0.8) !important;
+}
+.about-card-list-item:hover {
+  background-color:rgba(90, 99, 105, 0.8) !important;
 }
