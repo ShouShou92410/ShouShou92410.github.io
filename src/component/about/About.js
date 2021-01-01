@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function About() {
   return (
@@ -11,28 +10,16 @@ function About() {
       <Card.Img
         as={Image}
         className="p-3"
-        src={`${process.env.PUBLIC_URL}/pp_200px.jpg`}
+        alt="profile picture"
+        src={`${process.env.PUBLIC_URL}/pp.jpg`}
         roundedCircle
       />
-      <Card.Body>
+      <Card.Body className="p-2" style={{ textAlign: 'center' }}>
         <Card.Title>Yu-Hsiang Wen</Card.Title>
         <Card.Text>
           Hello, I'm Yu-Hsiang Wen or Sean. I'm currently studying computer science in Univerity of
           Calgary.
         </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item className="about-card-list-item" action>
-          Work 1
-        </ListGroup.Item>
-        <ListGroup.Item className="about-card-list-item" action>
-          Work 2
-        </ListGroup.Item>
-        <ListGroup.Item className="about-card-list-item" action>
-          Work 3
-        </ListGroup.Item>
-      </ListGroup>
-      <Card.Body style={{ textAlign: 'center' }}>
         <Card.Link
           href="https://github.com/ShouShou92410"
           rel="noopener noreferrer"
@@ -46,6 +33,20 @@ function About() {
           <Image src={`${process.env.PUBLIC_URL}/linkedin.png`} />
         </Card.Link>
       </Card.Body>
+      <ListGroup className="list-group-flush p-1">
+        <ListGroup.Item as={Link} to="/PersonalSite" className="about-card-list-item" action>
+          Personal Site
+        </ListGroup.Item>
+        <ListGroup.Item as={Link} to="/tourist-tracker" className="about-card-list-item" action>
+          tourist-tracker
+        </ListGroup.Item>
+        <ListGroup.Item as={Link} to="/Footprints" className="about-card-list-item" action>
+          Footprints
+        </ListGroup.Item>
+        <ListGroup.Item as={Link} to="/JPNVocabQuiz" className="about-card-list-item" action>
+          Japanese Vocab Quiz
+        </ListGroup.Item>
+      </ListGroup>
     </Card>
   );
 }

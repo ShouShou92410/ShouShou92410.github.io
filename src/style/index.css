@@ -57,6 +57,7 @@ img {
   margin: 0em !important;
 }
 
+.content-card,
 .about-card {
   background-color: rgb(108, 117, 125, 0.8) !important;
   border: 0px !important;
