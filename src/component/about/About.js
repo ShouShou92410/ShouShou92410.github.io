@@ -34,16 +34,16 @@ function About() {
         </Card.Link>
       </Card.Body>
       <ListGroup className="list-group-flush p-1">
-        <ListGroup.Item as={Link} to="/PersonalSite" className="about-card-list-item" action>
-          Personal Site
+        <ListGroup.Item as={Link} to="/personal-website" className="about-card-list-item" action>
+          Personal Website
         </ListGroup.Item>
         <ListGroup.Item as={Link} to="/tourist-tracker" className="about-card-list-item" action>
           tourist-tracker
         </ListGroup.Item>
-        <ListGroup.Item as={Link} to="/Footprints" className="about-card-list-item" action>
+        <ListGroup.Item as={Link} to="/footprints" className="about-card-list-item" action>
           Footprints
         </ListGroup.Item>
-        <ListGroup.Item as={Link} to="/JPNVocabQuiz" className="about-card-list-item" action>
+        <ListGroup.Item as={Link} to="/jpn-vocab-quiz" className="about-card-list-item" action>
           Japanese Vocab Quiz
         </ListGroup.Item>
       </ListGroup>
