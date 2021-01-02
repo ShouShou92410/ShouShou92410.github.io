@@ -9,8 +9,8 @@ import Content from './content/Content';
 function App() {
   return (
     <BrowserRouter>
-      <Container className="pt-4 pb-4" fluid>
-        <Row>
+      <Container className="pt-4 pb-4 height-fill" fluid>
+        <Row className="height-fill">
           <Col xs={2}>
             <About />
           </Col>
