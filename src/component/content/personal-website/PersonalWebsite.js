@@ -12,7 +12,7 @@ function PersonalWebsite() {
           This is my personal website, it contains some information about me and some of my personal
           projects, you can find more details about those from the links on the left.
           <br />
-          This website is created using:
+          This is created using:
           <ul className="m-0">
             <li>React</li>
             <li>Firebase</li>

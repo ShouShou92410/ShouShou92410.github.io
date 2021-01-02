@@ -4,25 +4,23 @@ import PersonalWebsite from './personal-website/PersonalWebsite';
 
 function Content() {
   return (
-    <main>
-      <Switch>
-        <Route path="/tourist-tracker">
-          <h1>tourist-tracker</h1>
-        </Route>
-        <Route path="/footprints">
-          <h1>Footprints</h1>
-        </Route>
-        <Route path="/jpn-vocab-quiz">
-          <h1>JPNVocabQuiz</h1>
-        </Route>
-        <Route path="/personal-website">
-          <PersonalWebsite />
-        </Route>
-        <Route path="/">
-          <PersonalWebsite />
-        </Route>
-      </Switch>
-    </main>
+    <Switch>
+      <Route path="/tourist-tracker">
+        <h1>tourist-tracker</h1>
+      </Route>
+      <Route path="/footprints">
+        <h1>Footprints</h1>
+      </Route>
+      <Route path="/jpn-vocab-quiz">
+        <h1>JPNVocabQuiz</h1>
+      </Route>
+      <Route path="/personal-website">
+        <PersonalWebsite />
+      </Route>
+      <Route path="/">
+        <PersonalWebsite />
+      </Route>
+    </Switch>
   );
 }
 
