@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import PersonalWebsite from './personal-website/PersonalWebsite';
 import TouristTracker from './tourist-tracker/TouristTracker';
+import Footprints from './footprints/Footprints';
 
 function Content() {
   return (
@@ -10,7 +11,7 @@ function Content() {
         <TouristTracker />
       </Route>
       <Route path="/footprints">
-        <h1>Footprints</h1>
+        <Footprints />
       </Route>
       <Route path="/jpn-vocab-quiz">
         <h1>JPNVocabQuiz</h1>
