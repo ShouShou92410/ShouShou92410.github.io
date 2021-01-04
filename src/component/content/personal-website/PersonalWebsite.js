@@ -31,7 +31,7 @@ function PersonalWebsite() {
           <br />
           <br />
           Tools that I used to create this website:
-          <ul className="m-0">
+          <ul className="m-0" style={{ listStyle: 'none' }}>
             <li>React</li>
             <li>Firebase</li>
             <li>GitHub</li>

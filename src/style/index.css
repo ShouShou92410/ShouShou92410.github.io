@@ -65,11 +65,11 @@ p > a {
   height: 100%;
 }
 
-main,
 .content-card,
 .about-card {
   background-color: rgb(108, 117, 125, 0.8) !important;
   border: 0px !important;
+  text-align: center;
 }
 
 .about-card-list-item {
