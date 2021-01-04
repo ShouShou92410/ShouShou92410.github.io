@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import PersonalWebsite from './personal-website/PersonalWebsite';
 import TouristTracker from './tourist-tracker/TouristTracker';
 import Footprints from './footprints/Footprints';
+import JPNVocabQuiz from './jpn-vocab-quiz/JPNVocabQuiz';
 
 function Content() {
   return (
@@ -14,7 +15,7 @@ function Content() {
         <Footprints />
       </Route>
       <Route path="/jpn-vocab-quiz">
-        <h1>JPNVocabQuiz</h1>
+        <JPNVocabQuiz />
       </Route>
       <Route path="/personal-website">
         <PersonalWebsite />

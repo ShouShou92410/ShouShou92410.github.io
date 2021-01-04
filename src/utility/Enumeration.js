@@ -19,3 +19,31 @@ export const QuizEnumeration = Object.freeze({
     EN_JPNK: 'English → Japanese w/o Kanji'
   })
 });
+
+const Enumeration = Object.freeze({
+  JPN_VOCAB_QUIZ_SESSION_STATE: Object.freeze({
+    INITIALIZATION: 0,
+    ONGOING: 1,
+    FINISH: 2
+  }),
+  JPN_VOCAB_QUIZ_FORMAT: Object.freeze({
+    JPK_EN: Object.freeze({
+      label: 'Japanese w/ Kanji → English',
+      value: 0
+    }),
+    JPNK_EN: Object.freeze({
+      label: 'Japanese w/o Kanji → English',
+      value: 1
+    }),
+    EN_JPK: Object.freeze({
+      label: 'English → Japanese w/ Kanji',
+      value: 2
+    }),
+    EN_JPNK: Object.freeze({
+      label: 'English → Japanese w/o Kanji',
+      value: 3
+    })
+  })
+});
+
+export default Enumeration;
