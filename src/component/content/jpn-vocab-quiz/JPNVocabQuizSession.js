@@ -6,19 +6,28 @@ import JPNVocabQuizResult from './JPNVocabQuizResult';
 import Enumeration from '../../../utility/Enumeration';
 
 function JPNVocabQuizSession() {
-  const [sessionState, setSessionState] = useState(
-    Enumeration.JPN_VOCAB_QUIZ_SESSION_STATE.INITIALIZATION
-  );
+  const [session, setSession] = useState({
+    state: Enumeration.JPN_VOCAB_QUIZ_SESSION_STATE.INITIALIZATION,
+    format: null,
+    questions: null
+  });
+  const updateSession = (newSession) =>
+    setSession({
+      state: newSession.state,
+      format: newSession.format,
+      questions: newSession.questions
+    });
+
   const renderSessionContent = () => {
-    switch (sessionState) {
+    switch (session.state) {
       case Enumeration.JPN_VOCAB_QUIZ_SESSION_STATE.INITIALIZATION:
-        return <JPNVocabQuizSetup />;
+        return <JPNVocabQuizSetup updateSession={updateSession} />;
       case Enumeration.JPN_VOCAB_QUIZ_SESSION_STATE.ONGOING:
-        return <JPNVocabQuizOngoing />;
+        return <JPNVocabQuizOngoing updateSession={updateSession} />;
       case Enumeration.JPN_VOCAB_QUIZ_SESSION_STATE.FINISH:
-        return <JPNVocabQuizResult />;
+        return <JPNVocabQuizResult updateSession={updateSession} />;
       default:
-        return <JPNVocabQuizSetup />;
+        return <JPNVocabQuizSetup updateSession={updateSession} />;
     }
   };
   return <Container>{renderSessionContent()}</Container>;
