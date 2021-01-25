@@ -27,22 +27,10 @@ const Enumeration = Object.freeze({
     FINISH: 2
   }),
   JPN_VOCAB_QUIZ_FORMAT: Object.freeze({
-    JPK_EN: Object.freeze({
-      label: 'Japanese w/ Kanji → English',
-      value: 0
-    }),
-    JPNK_EN: Object.freeze({
-      label: 'Japanese w/o Kanji → English',
-      value: 1
-    }),
-    EN_JPK: Object.freeze({
-      label: 'English → Japanese w/ Kanji',
-      value: 2
-    }),
-    EN_JPNK: Object.freeze({
-      label: 'English → Japanese w/o Kanji',
-      value: 3
-    })
+    JPK_EN: 'Japanese w/ Kanji → English',
+    JPNK_EN: 'Japanese w/o Kanji → English',
+    EN_JPK: 'English → Japanese w/ Kanji',
+    EN_JPNK: 'English → Japanese w/o Kanji'
   })
 });
 

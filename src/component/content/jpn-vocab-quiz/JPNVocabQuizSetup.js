@@ -4,18 +4,29 @@ import Button from 'react-bootstrap/Button';
 import Enumeration from '../../../utility/Enumeration';
 
 function JPNVocabQuizSetup({ updateSession }) {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const quizSetupForm = Object.fromEntries(formData.entries());
+
+    console.log(quizSetupForm);
+  };
+
   return (
-    <Form>
+    <Form className="ml-5 mr-5" onSubmit={handleSubmit}>
       <Form.Group>
         <Form.Label>Quiz Format</Form.Label>
         <Form.Control as="select" name="format">
-          {Object.values(Enumeration.JPN_VOCAB_QUIZ_FORMAT).map((format) => (
-            <option key={format.value}>{format.label}</option>
+          {Object.entries(Enumeration.JPN_VOCAB_QUIZ_FORMAT).map(([key, value]) => (
+            <option key={key} value={key}>
+              {value}
+            </option>
           ))}
         </Form.Control>
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
+      <Button className="pl-5 pr-5" variant="primary" type="submit">
+        Start
       </Button>
     </Form>
   );
