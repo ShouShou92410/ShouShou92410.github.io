@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Enumeration from '../../../utility/Enumeration';
+import { FirebaseContext } from '../../../services/Firebase';
 
 function JPNVocabQuizSetup({ updateSession }) {
-  const handleSubmit = (e) => {
+  const firebase = useContext(FirebaseContext);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
     const quizSetupForm = Object.fromEntries(formData.entries());
+
+    await firebase.getVocabulary();
 
     console.log(quizSetupForm);
     console.log(quizSetupForm.format);

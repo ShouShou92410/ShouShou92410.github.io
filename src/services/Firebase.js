@@ -1,5 +1,6 @@
 import React from 'react';
 import app from 'firebase/app';
+import 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -16,6 +17,12 @@ const FirebaseContext = React.createContext(null);
 class Firebase {
   constructor() {
     app.initializeApp(firebaseConfig);
+    this.db = app.firestore();
+  }
+
+  async getVocabulary() {
+    var res = await this.db.collection('vocabulary').get();
+    res.docs.map((doc) => console.log(`${doc.id}: ${doc.data().gojuuon}`));
   }
 }
 
