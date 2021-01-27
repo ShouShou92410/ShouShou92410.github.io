@@ -10,12 +10,14 @@ function JPNVocabQuiz() {
   const [session, setSession] = useState({
     state: Enumeration.JPN_VOCAB_QUIZ_SESSION_STATE.INITIALIZATION,
     format: null,
+    range: [],
     questions: null
   });
   const updateSession = (newSession) =>
     setSession({
       state: newSession.state,
       format: newSession.format,
+      range: newSession.range,
       questions: newSession.questions
     });
 

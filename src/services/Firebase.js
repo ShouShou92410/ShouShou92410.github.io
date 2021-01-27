@@ -21,9 +21,7 @@ class Firebase {
   }
 
   async getRandomVocabularies(questionCount) {
-    questionCount = 5;
-
-    const vocabulariesRef = this.db.collection('vocabulary');
+    const vocabulariesRef = this.db.collection('vocabularies');
 
     const metadataRes = await vocabulariesRef.doc('-metadata-').get();
     const count = metadataRes.data().count;
@@ -34,8 +32,7 @@ class Firebase {
     const randomRes = await vocabulariesRef.where('id', 'in', randomIDs).get();
     const randomVocabularies = randomRes.docs.map((x) => x.data());
 
-    console.log(randomIDs);
-    console.log(randomVocabularies);
+    return randomVocabularies;
   }
 }
 
