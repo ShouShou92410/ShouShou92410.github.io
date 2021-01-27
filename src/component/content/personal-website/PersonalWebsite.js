@@ -30,15 +30,13 @@ function PersonalWebsite() {
           .
           <br />
           <br />
-          Tools that I used to create this website:
-          <ul className="m-0" style={{ listStyle: 'none' }}>
-            <li>React</li>
-            <li>Firebase</li>
-            <li>GitHub</li>
-            <li>Git</li>
-            <li>NPM</li>
-            <li>Visual Studio Code</li>
-          </ul>
+          Tools that I used to create this website: <br />
+          React <br />
+          Firebase <br />
+          GitHub <br />
+          Git <br />
+          NPM <br />
+          Visual Studio Code <br />
         </Card.Text>
       </Card.Body>
     </Card>

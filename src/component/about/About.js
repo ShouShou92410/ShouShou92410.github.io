@@ -20,18 +20,6 @@ function About() {
           Hello, I'm Yu-Hsiang Wen or Sean. I'm currently studying computer science in Univerity of
           Calgary.
         </Card.Text>
-        <Card.Link
-          href="https://github.com/ShouShou92410"
-          rel="noopener noreferrer"
-          target="_blank">
-          <Image src={`${process.env.PUBLIC_URL}/github.png`} />
-        </Card.Link>
-        <Card.Link
-          href="https://www.linkedin.com/in/yu-hsiang-wen-b61745144/"
-          rel="noopener noreferrer"
-          target="_blank">
-          <Image src={`${process.env.PUBLIC_URL}/linkedin.png`} />
-        </Card.Link>
       </Card.Body>
       <ListGroup className="list-group-flush p-1">
         <ListGroup.Item as={Link} to="/personal-website" className="about-card-list-item" action>
@@ -47,6 +35,20 @@ function About() {
           Japanese Vocab Quiz
         </ListGroup.Item>
       </ListGroup>
+      <Card.Body className="p-2" style={{ textAlign: 'center' }}>
+        <Card.Link
+          href="https://github.com/ShouShou92410"
+          rel="noopener noreferrer"
+          target="_blank">
+          <Image src={`${process.env.PUBLIC_URL}/github.png`} />
+        </Card.Link>
+        <Card.Link
+          href="https://www.linkedin.com/in/yu-hsiang-wen-b61745144/"
+          rel="noopener noreferrer"
+          target="_blank">
+          <Image src={`${process.env.PUBLIC_URL}/linkedin.png`} />
+        </Card.Link>
+      </Card.Body>
     </Card>
   );
 }
