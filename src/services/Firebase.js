@@ -20,10 +20,31 @@ class Firebase {
     this.db = app.firestore();
   }
 
-  async getVocabulary() {
-    var res = await this.db.collection('vocabulary').get();
-    res.docs.map((doc) => console.log(`${doc.id}: ${doc.data().gojuuon}`));
+  async getRandomVocabularies(questionCount) {
+    questionCount = 5;
+
+    const vocabulariesRef = this.db.collection('vocabulary');
+
+    const metadataRes = await vocabulariesRef.doc('-metadata-').get();
+    const count = metadataRes.data().count;
+
+    const temp = [...Array(count).keys()].map((x) => x + 1);
+    const randomIDs = shuffleArray(temp).slice(0, questionCount);
+
+    const randomRes = await vocabulariesRef.where('id', 'in', randomIDs).get();
+    const randomVocabularies = randomRes.docs.map((x) => x.data());
+
+    console.log(randomIDs);
+    console.log(randomVocabularies);
   }
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
 }
 
 export { FirebaseContext };

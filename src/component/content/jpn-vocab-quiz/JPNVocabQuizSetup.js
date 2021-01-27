@@ -13,7 +13,7 @@ function JPNVocabQuizSetup({ updateSession }) {
     const formData = new FormData(e.target);
     const quizSetupForm = Object.fromEntries(formData.entries());
 
-    await firebase.getVocabulary();
+    await firebase.getRandomVocabularies();
 
     console.log(quizSetupForm);
     console.log(quizSetupForm.format);
