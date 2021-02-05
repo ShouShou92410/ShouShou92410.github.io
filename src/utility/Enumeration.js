@@ -45,6 +45,10 @@ const Enumeration = Object.freeze({
     })
   }),
   JPN_VOCAB_QUIZ_RANGE: Object.freeze({
+    ALL: Object.freeze({
+      label: 'All',
+      value: 99
+    }),
     GREETING: Object.freeze({
       label: 'Greetings',
       value: 0
