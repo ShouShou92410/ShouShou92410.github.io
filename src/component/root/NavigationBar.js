@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -17,10 +17,10 @@ function NavigationBar() {
         <Navbar.Toggle onClick={handleToggleClick} />
         <Navbar.Collapse>
           <Nav className="ml-auto">
-            <Nav.Link as={Link} to="/About" onClick={handleLinkClick}>
+            <Nav.Link as={Link} to="/about" onClick={handleLinkClick}>
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/Project" onClick={handleLinkClick}>
+            <Nav.Link as={Link} to="/project" onClick={handleLinkClick}>
               Project
             </Nav.Link>
           </Nav>
