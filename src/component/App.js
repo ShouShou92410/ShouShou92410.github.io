@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavigationBar />
-      <Container className="content">
+      <Container>
         <Content />
       </Container>
     </BrowserRouter>
