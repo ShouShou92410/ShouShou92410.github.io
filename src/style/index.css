@@ -1,5 +1,5 @@
 #root {
-  height: 100vh;
+  min-height: calc(100vh - 60px);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,9 +19,13 @@ a:hover {
 .nav {
   background-color: rgb(30, 35, 45);
   height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
-.jumbotron-background {
+#home-jumbotron-background {
   background-image: url('/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -30,8 +34,17 @@ a:hover {
   min-height: 40vh;
 }
 
-.jumbotron {
-  background-color: rgba(0, 35, 75, 0.3);
+#home-jumbotron {
+  background-color: rgba(70, 75, 80, 0.3);
   min-height: 40vh;
   text-shadow: 2px 1px #000000;
+}
+
+.content-container {
+  background-color: rgba(70, 75, 80);
+  width: 100%;
+}
+
+hr {
+  border-top: 2px solid rgba(255, 255, 255, 1);
 }

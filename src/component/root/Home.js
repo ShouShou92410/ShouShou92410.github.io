@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
@@ -9,8 +10,8 @@ import Col from 'react-bootstrap/Col';
 function Home() {
   return (
     <>
-      <div className="jumbotron-background">
-        <Jumbotron className="d-flex align-items-center pt-0 pb-0 mt-3">
+      <div id="home-jumbotron-background">
+        <Jumbotron id="home-jumbotron" className="d-flex align-items-center pt-0 pb-0">
           <Container>
             <Row>
               <Col md={12} lg={3} className="d-flex justify-content-center align-items-center pt-3 pb-3">
@@ -26,7 +27,9 @@ function Home() {
                 </p>
                 <p>You can learn more about me and the projects I did on this website.</p>
                 <p>
-                  <Button variant="info">More about me</Button>
+                  <Button as={Link} to="/about" variant="info" style={{ textShadow: 'none' }}>
+                    More about me
+                  </Button>
                 </p>
               </Col>
             </Row>
