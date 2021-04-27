@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 
 function NavigationBar() {
   return (
-    <Nav className="justify-content-center">
+    <Nav className="justify-content-center align-items-center">
       <Nav.Item>
         <Nav.Link as={Link} to="/">
           Home
