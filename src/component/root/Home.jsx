@@ -6,6 +6,9 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ProjectCardCPSC583Visualization from '../project/ProjectCardCPSC583Visualization';
+import ProjectCardFootprints from '../project/ProjectCardFootprints';
+import ProjectCardCharacterChanger from '../project/ProjectCardCharacterChanger';
 
 function Home() {
   return (
@@ -36,6 +39,22 @@ function Home() {
           </Container>
         </Jumbotron>
       </div>
+      <Container>
+        <Row>
+          <Col xs={12} className="d-flex justify-content-center">
+            <h1>Project highlights</h1>
+          </Col>
+          <Col md={12} lg={4} className="mt-2 mb-2">
+            <ProjectCardCPSC583Visualization />
+          </Col>
+          <Col md={12} lg={4} className="mt-2 mb-2">
+            <ProjectCardFootprints />
+          </Col>
+          <Col md={12} lg={4} className="mt-2 mb-2">
+            <ProjectCardCharacterChanger />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

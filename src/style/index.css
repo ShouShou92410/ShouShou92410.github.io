@@ -9,11 +9,11 @@
 }
 
 a {
-  color: white;
+  color: rgb(25, 160, 185);
 }
 
 a:hover {
-  color: grey;
+  color: rgb(35, 215, 250);
 }
 
 .nav {
@@ -47,4 +47,8 @@ a:hover {
 
 hr {
   border-top: 2px solid rgba(255, 255, 255, 1);
+}
+
+.card-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
