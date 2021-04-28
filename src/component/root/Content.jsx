@@ -10,7 +10,7 @@ function Content() {
       <Route exact path="/about">
         <About />
       </Route>
-      <Route exact path="/project">
+      <Route exact path="/projects">
         <Project />
       </Route>
       <Route path="/">

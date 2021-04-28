@@ -14,13 +14,13 @@ function Home() {
   return (
     <>
       <div id="home-jumbotron-background">
-        <Jumbotron id="home-jumbotron" className="d-flex align-items-center pt-0 pb-0">
+        <Jumbotron id="home-jumbotron" className="d-flex align-items-center py-0">
           <Container>
             <Row>
-              <Col md={12} lg={3} className="d-flex justify-content-center align-items-center pt-3 pb-3">
+              <Col md={12} lg={3} className="d-flex justify-content-center align-items-center py-3">
                 <Image src={`${process.env.PUBLIC_URL}/pp.jpg`} width="200" height="200" roundedCircle />
               </Col>
-              <Col className="pt-3 pb-3">
+              <Col className="py-3">
                 <p className="m-0">Hello, my name is</p>
                 <h1>Sean Wen</h1>
                 <p>
@@ -41,16 +41,19 @@ function Home() {
       </div>
       <Container>
         <Row>
-          <Col xs={12} className="d-flex justify-content-center">
-            <h1>Project highlights</h1>
+          <Col xs={12}>
+            <p className="w-100 text-center">
+              <h1>Project Highlights</h1>
+              <hr />
+            </p>
           </Col>
-          <Col md={12} lg={4} className="mt-2 mb-2">
+          <Col md={12} lg={4} className="my-2">
             <ProjectCardCPSC583Visualization />
           </Col>
-          <Col md={12} lg={4} className="mt-2 mb-2">
+          <Col md={12} lg={4} className="my-2">
             <ProjectCardFootprints />
           </Col>
-          <Col md={12} lg={4} className="mt-2 mb-2">
+          <Col md={12} lg={4} className="my-2">
             <ProjectCardCharacterChanger />
           </Col>
         </Row>

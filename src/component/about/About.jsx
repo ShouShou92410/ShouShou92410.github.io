@@ -11,10 +11,10 @@ function About() {
       <Card className="content-container">
         <Card.Body>
           <Row>
-            <Col md={12} lg={3} className="d-flex justify-content-center align-items-center pt-3 pb-3">
+            <Col md={12} lg={3} className="d-flex justify-content-center align-items-center py-3">
               <Image src={`${process.env.PUBLIC_URL}/pp.jpg`} width="200" height="200" roundedCircle />
             </Col>
-            <Col className="pt-3 pb-3">
+            <Col className="py-3">
               <p className="m-0">Hello, my name is</p>
               <h1>Sean Wen</h1>
               <p>

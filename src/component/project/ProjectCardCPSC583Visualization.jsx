@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function ProjectCardCPSC583Visualization() {
   return (
-    <Card className="content-container">
+    <Card className="project-card">
       <Card.Header>Web Development</Card.Header>
       <Card.Body>
         <Card.Title>CPSC 583 Visualization</Card.Title>

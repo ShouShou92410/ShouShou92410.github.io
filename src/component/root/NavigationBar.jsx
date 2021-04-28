@@ -16,8 +16,8 @@ function NavigationBar() {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to="/project">
-          Project
+        <Nav.Link as={Link} to="/projects">
+          Projects
         </Nav.Link>
       </Nav.Item>
     </Nav>
