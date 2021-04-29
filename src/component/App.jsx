@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavigationBar />
-      <div className="pt-3" style={{ marginTop: '60px' }}>
+      <div className="py-3" style={{ marginTop: '60px' }}>
         <Content />
       </div>
     </BrowserRouter>
