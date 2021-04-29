@@ -33,6 +33,14 @@ function Home() {
                   <Button as={Link} to="/about" variant="info" style={{ textShadow: 'none' }}>
                     More about me
                   </Button>
+                  <span class="float-right">
+                    <a href="http://linkedin.com/in/yu-hsiang-wen-b61745144" target="_blank" rel="noopener noreferrer" className="mx-2">
+                      <Image src={`${process.env.PUBLIC_URL}/linkedin.png`} width="40" height="40" rounded />
+                    </a>
+                    <a href="https://github.com/ShouShou92410" target="_blank" rel="noopener noreferrer" className="mx-2">
+                      <Image src={`${process.env.PUBLIC_URL}/github.png`} width="40" height="40" rounded />
+                    </a>
+                  </span>
                 </p>
               </Col>
             </Row>
