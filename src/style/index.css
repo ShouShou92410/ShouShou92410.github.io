@@ -23,6 +23,7 @@ a:hover {
   position: fixed;
   top: 0;
   z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 #home-jumbotron-background {
@@ -40,10 +41,10 @@ a:hover {
   text-shadow: 2px 1px #000000;
 }
 
-.content-container,
 .project-card {
   background-color: rgba(70, 75, 80);
   width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 hr {
