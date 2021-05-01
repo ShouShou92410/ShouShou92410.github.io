@@ -6,6 +6,8 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import ProjectCardCPSC583Visualization from '../project/ProjectCardCPSC583Visualization';
 import ProjectCardFootprints from '../project/ProjectCardFootprints';
 import ProjectCardCharacterChanger from '../project/ProjectCardCharacterChanger';
@@ -20,7 +22,7 @@ function Home() {
               <Col md={12} lg={3} className="d-flex justify-content-center align-items-center py-3">
                 <Image src={`${process.env.PUBLIC_URL}/pp.jpg`} width="200" height="200" roundedCircle />
               </Col>
-              <Col className="py-3">
+              <Col className="py-3 text-center text-lg-left">
                 <p className="m-0">Hello, my name is</p>
                 <h1>Sean Wen</h1>
                 <p>
@@ -29,19 +31,21 @@ function Home() {
                   my friends!
                 </p>
                 <p>You can learn more about me and the projects I did on this website.</p>
-                <p>
-                  <Button as={Link} to="/about" variant="info" style={{ textShadow: 'none' }}>
-                    More about me
-                  </Button>
-                  <span class="float-right">
+                <Row>
+                  <Col md={12} lg={6} className="d-flex justify-content-center justify-content-lg-start align-items-center py-3 py-lg-0">
+                    <Button as={Link} to="/about" variant="info" style={{ textShadow: 'none' }}>
+                      More about me
+                    </Button>
+                  </Col>
+                  <Col md={12} lg={6} className="d-flex justify-content-center justify-content-lg-end align-items-center py-3 py-lg-0">
                     <a href="http://linkedin.com/in/yu-hsiang-wen-b61745144" target="_blank" rel="noopener noreferrer" className="mx-2">
-                      <Image src={`${process.env.PUBLIC_URL}/linkedin.png`} width="40" height="40" rounded />
+                      <FontAwesomeIcon icon={faLinkedin} size="3x" color="white" />
                     </a>
                     <a href="https://github.com/ShouShou92410" target="_blank" rel="noopener noreferrer" className="mx-2">
-                      <Image src={`${process.env.PUBLIC_URL}/github.png`} width="40" height="40" rounded />
+                      <FontAwesomeIcon icon={faGithubSquare} size="3x" color="white" />
                     </a>
-                  </span>
-                </p>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </Container>
