@@ -3,16 +3,68 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
 function About() {
   return (
     <Container className="shadow-hard">
       <Row className="about-header">
         <Col md={12} lg={3} className="d-flex justify-content-center align-items-center py-3">
-          <Image src={`${process.env.PUBLIC_URL}/pp.jpg`} width="200" height="200" roundedCircle />
+          <Image src={`${process.env.PUBLIC_URL}/pp.jpg`} width="200" height="200" rounded />
         </Col>
-        <Col className="py-3">
+        <Col md={12} lg={6} className="text-center text-lg-left py-3">
           <h1>Sean Wen</h1>
+          <span style={{ color: '#87a5c8' }}>
+            <p className="mb-2 mb-lg-0">
+              I'm Yu-Hsiang Wen, you can also call me Sean. I was born in Kaohsiung, Taiwan, and moved to Calgary, Canada at the age of 12.
+            </p>
+            <p className="mb-2 mb-lg-0">
+              I'm a software developer with 8+ years of programming experience. Expert knowledge in front and back-end web development. Excellent team
+              player and strong problem solver.
+            </p>
+            <p className="mb-2 mb-lg-0">
+              In my free time, I enjoy playing video games and staying active. Recently, I've being playing a lot of Age of Empires 2 and Minecraft.
+            </p>
+          </span>
+        </Col>
+        <Col md={12} lg={3} className="d-flex justify-content-center align-items-center py-3 ">
+          <ul className="list-clean p-0 m-0">
+            <li className="mb-3">
+              <a
+                href="https://linkedin.com/in/yuhsiangwen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+                style={{ fontSize: '1.1rem', textDecoration: 'none' }}>
+                <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+                linkedin.com/in/yuhsiangwen
+              </a>
+            </li>
+            <li className="mb-3">
+              <a
+                href="https://github.com/ShouShou92410"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+                style={{ fontSize: '1.1rem', textDecoration: 'none' }}>
+                <FontAwesomeIcon icon={faGithubSquare} className="mr-2" />
+                github.com/ShouShou92410
+              </a>
+            </li>
+            <li className="mb-3">
+              <a
+                href="mailto:sw92410@hotmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+                style={{ fontSize: '1.1rem', textDecoration: 'none' }}>
+                <FontAwesomeIcon icon={faEnvelopeSquare} className="mr-2" />
+                sw92410@hotmail.com
+              </a>
+            </li>
+          </ul>
         </Col>
       </Row>
       <Row className="about-content">
@@ -47,7 +99,18 @@ function About() {
               </div>
             </Col>
             <Col xs={12} className="about-section mb-3">
-              <h4 class="font-weight-bold">PROJECTS</h4>
+              <h4 class="font-weight-bold">
+                PROJECTS
+                <a
+                  href={`${process.env.PUBLIC_URL}/projects`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-2"
+                  style={{ color: 'inherit' }}>
+                  <FontAwesomeIcon size="xs" icon={faExternalLinkAlt} />
+                </a>
+              </h4>
+
               <hr />
               <div className="px-3 mb-2">
                 <h6>
@@ -89,10 +152,11 @@ function About() {
             </Col>
           </Row>
         </Col>
-        <Col md={12} lg={3} className="py-3">
+        <Col md={12} lg={3} className="py-lg-3">
           <Row>
             <Col xs={12} className="about-section mb-3">
-              <h6>SKILLS</h6>
+              <h4>SKILLS</h4>
+              <hr />
               <ul className="list-clean font-weight-light">
                 <li>JavaScript (ReactJS, Node.js, jQuery)</li>
                 <li>HTML/CSS</li>
@@ -110,7 +174,8 @@ function About() {
               </ul>
             </Col>
             <Col xs={12} className="about-section mb-3">
-              <h6>LANGUAGES</h6>
+              <h4>LANGUAGES</h4>
+              <hr />
               <ul className="list-clean font-weight-light">
                 <li>English</li>
                 <li>Chinese</li>
@@ -118,7 +183,8 @@ function About() {
               </ul>
             </Col>
             <Col xs={12} className="about-section mb-3">
-              <h6>INTERESTS</h6>
+              <h4>INTERESTS</h4>
+              <hr />
               <ul className="list-clean font-weight-light">
                 <li>Gaming</li>
                 <li>Working out</li>

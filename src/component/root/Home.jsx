@@ -38,7 +38,7 @@ function Home() {
                     </Button>
                   </Col>
                   <Col md={12} lg={6} className="d-flex justify-content-center justify-content-lg-end align-items-center py-3 py-lg-0">
-                    <a href="http://linkedin.com/in/yu-hsiang-wen-b61745144" target="_blank" rel="noopener noreferrer" className="mx-2">
+                    <a href="https://linkedin.com/in/yuhsiangwen" target="_blank" rel="noopener noreferrer" className="mx-2">
                       <FontAwesomeIcon icon={faLinkedin} size="3x" color="white" />
                     </a>
                     <a href="https://github.com/ShouShou92410" target="_blank" rel="noopener noreferrer" className="mx-2">
