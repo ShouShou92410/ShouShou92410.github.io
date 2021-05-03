@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function ProjectCardTouristTracker() {
   return (
-    <Card className="project-card">
+    <Card className="project-card shadow-hard">
       <Card.Header>Web Development</Card.Header>
       <Card.Body>
         <Card.Title>Tourist Tracker</Card.Title>

@@ -16,6 +16,19 @@ a:hover {
   color: rgb(35, 215, 250);
 }
 
+hr {
+  border-top: 2px solid rgba(255, 255, 255, 1);
+}
+
+.list-clean {
+  list-style-type: none;
+  padding-inline-start: 10px;
+}
+
+.shadow-hard {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
 .nav {
   background-color: rgb(30, 35, 45);
   height: 60px;
@@ -23,7 +36,6 @@ a:hover {
   position: fixed;
   top: 0;
   z-index: 2;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 #home-jumbotron-background {
@@ -42,15 +54,28 @@ a:hover {
 }
 
 .project-card {
-  background-color: rgba(70, 75, 80);
+  background-color: rgba(55, 60, 75);
   width: 100%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-hr {
-  border-top: 2px solid rgba(255, 255, 255, 1);
-}
-
-.card-header {
+.project-card > .card-header {
+  background-color: rgb(90, 120, 160);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.project-card > .card-body > .card-text {
+  color: rgb(200, 200, 200);
+}
+
+.about-header {
+  background-color: rgba(25, 30, 50);
+}
+.about-content {
+  background-color: rgba(70, 90, 125);
+}
+.about-section > h4,
+h6 {
+  color: rgb(160, 200, 255);
+}
+.about-section > hr {
+  border-top: 2px solid rgba(160, 200, 255);
 }

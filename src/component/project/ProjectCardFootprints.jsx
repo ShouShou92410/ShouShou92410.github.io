@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function ProjectCardFootprints() {
   return (
-    <Card className="project-card">
+    <Card className="project-card shadow-hard">
       <Card.Header>Andoird App</Card.Header>
       <Card.Body>
         <Card.Title>Footprints</Card.Title>

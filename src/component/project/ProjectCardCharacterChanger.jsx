@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function ProjectCardCharacterChanger() {
   return (
-    <Card className="project-card">
+    <Card className="project-card shadow-hard">
       <Card.Header>Java Application</Card.Header>
       <Card.Body>
         <Card.Title>Character Changer</Card.Title>
