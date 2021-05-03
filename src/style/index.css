@@ -1,56 +1,80 @@
 #root {
-  min-height: 100vh;
-  height: 100%;
-  background-color: rgb(209, 209, 209);
+  min-height: calc(100vh - 60px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgb(35, 45, 55);
+  color: white;
 }
 
-p {
-  font-size: 18px;
-  white-space: pre-wrap;
-  margin-left: 1em !important;
-  margin-right: 1em !important;
+a {
+  color: rgb(25, 160, 185);
+}
+
+a:hover {
+  color: rgb(35, 215, 250);
 }
 
 hr {
-  margin: 0 !important;
+  border-top: 2px solid rgba(255, 255, 255, 1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+.list-clean {
+  list-style-type: none;
+  padding-inline-start: 10px;
 }
 
-.text-sm {
-  font-size: 0.8em;
+.shadow-hard {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-img {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.sticky-nav {
-  position: sticky;
+.nav {
+  background-color: rgb(30, 35, 45);
+  height: 60px;
+  width: 100%;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 2;
 }
 
-.dark,
-.dark > a {
-  color: rgba(26, 26, 26, 0.75);
+#home-jumbotron-background {
+  background-image: url('/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.3rem;
+  min-height: 40vh;
 }
 
-.active {
-  font-weight: 500;
-  color: #1a1a1a !important;
+#home-jumbotron {
+  background-color: rgba(70, 75, 80, 0.3);
+  min-height: 40vh;
+  text-shadow: 2px 1px #000000;
 }
 
-.float-right {
-  float: right;
+.project-card {
+  background-color: rgba(55, 60, 75);
+  width: 100%;
 }
 
-.blog-post-preview {
-  height: 4.5em;
-  max-height: 4.5em;
-  overflow: hidden;
-  margin: 0em !important;
+.project-card > .card-header {
+  background-color: rgb(90, 120, 160);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.project-card > .card-body > .card-text {
+  color: rgb(200, 200, 200);
+}
+
+.about-header {
+  background-color: rgba(25, 30, 50);
+}
+.about-content {
+  background-color: rgba(70, 90, 125);
+}
+.about-section > h4 {
+  color: rgb(160, 200, 255);
+}
+.about-section > hr {
+  border-top: 2px solid rgba(160, 200, 255);
 }
