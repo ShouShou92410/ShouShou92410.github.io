@@ -25,7 +25,7 @@ function About() {
               player and strong problem solver.
             </p>
             <p className="mb-2 mb-lg-0">
-              In my free time, I enjoy playing video games and staying active. Recently, I've being playing a lot of Age of Empires 2 and Minecraft.
+              In my free time, I enjoy playing video games and staying active. Recently, I've been playing a lot of Age of Empires 2 and Minecraft.
             </p>
           </span>
         </Col>
