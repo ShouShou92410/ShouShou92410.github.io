@@ -75,13 +75,24 @@ function About() {
               <hr />
               <div className="px-3 mb-2">
                 <h6 className="mb-0">
+                  Detechtion Technologies — <i>Staff Software Developer</i>
+                </h6>
+                <small class="font-weight-light">September 2021 - PRESENT</small>
+                <ul>
+                  <li>Maintain a hybrid mobile application that supports around 20 different client versions at the same time.</li>
+                  <li>Helped upgrade the backend infrastructures and project dependencies of the hybrid mobile application.</li>
+                  <li>Maintain a web application that manages thousands of client data.</li>
+                </ul>
+              </div>
+              <div className="px-3 mb-2">
+                <h6 className="mb-0">
                   Detechtion Technologies — <i>Software Intern</i>
                 </h6>
-                <small class="font-weight-light">June 2019 - PRESENT</small>
+                <small class="font-weight-light">June 2019 - September 2021</small>
                 <ul>
-                  <li>Worked in a team that maintains and builds infrastructures that manage thousands of client data.</li>
+                  <li>Worked in an agile team of 5 that maintains and builds infrastructures that manage thousands of client data.</li>
                   <li>Helped set up an API project and a ReactJS project from scratch.</li>
-                  <li>Responsible for adding and testing features to a website that the clients interact with.</li>
+                  <li>Responsible for adding and testing features to a website for hundreds of clients to interact with.</li>
                 </ul>
               </div>
             </Col>
@@ -170,6 +181,7 @@ function About() {
                 <li>Azure Stroage</li>
                 <li>Visual Studio</li>
                 <li>Visual Studio Code</li>
+                <li>Amazon Web Services</li>
                 <li>Git</li>
               </ul>
             </Col>
@@ -177,9 +189,9 @@ function About() {
               <h4>LANGUAGES</h4>
               <hr />
               <ul className="list-clean font-weight-light">
-                <li>English</li>
-                <li>Chinese</li>
-                <li>Japanese</li>
+                <li>English (Bilingual)</li>
+                <li>Chinese (Native)</li>
+                <li>Japanese (Elementary)</li>
               </ul>
             </Col>
             <Col xs={12} className="about-section mb-3">
