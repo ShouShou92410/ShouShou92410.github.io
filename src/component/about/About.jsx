@@ -21,11 +21,11 @@ function About() {
               I'm Yu-Hsiang Wen, you can also call me Sean. I was born in Kaohsiung, Taiwan, and moved to Calgary, Canada at the age of 12.
             </p>
             <p className="mb-2 mb-lg-0">
-              I'm a software developer with 8+ years of programming experience. Expert knowledge in front and back-end web development. Excellent team
-              player and strong problem solver.
+              I'm a software developer that started programming at the age of 16. Expert knowledge in front and back-end web development. Excellent
+              team player and strong problem solver.
             </p>
             <p className="mb-2 mb-lg-0">
-              In my free time, I enjoy playing video games and staying active. Recently, I've been playing a lot of Age of Empires 2 and Minecraft.
+              In my free time, I enjoy playing video games and staying active. Recently, I've been playing a lot of Age of Empires 2 and Warframe.
             </p>
           </span>
         </Col>
@@ -81,7 +81,7 @@ function About() {
                 <ul>
                   <li>Maintain a hybrid mobile application that supports around 20 different client versions at the same time.</li>
                   <li>Helped upgrade the backend infrastructures and project dependencies of the hybrid mobile application.</li>
-                  <li>Maintain a web application that manages thousands of client data.</li>
+                  <li>Designing and developing a React Native project from scratch.</li>
                 </ul>
               </div>
               <div className="px-3 mb-2">
@@ -91,7 +91,7 @@ function About() {
                 <small class="font-weight-light">June 2019 - September 2021</small>
                 <ul>
                   <li>Worked in an agile team of 5 that maintains and builds infrastructures that manage thousands of client data.</li>
-                  <li>Helped set up an API project and a ReactJS project from scratch.</li>
+                  <li>Helped set up the foundations for an API project and a ReactJS project, such as CRUD endpoints and web app routing.</li>
                   <li>Responsible for adding and testing features to a website for hundreds of clients to interact with.</li>
                 </ul>
               </div>
@@ -103,7 +103,7 @@ function About() {
                 <h6 className="mb-0">
                   University of Calgary — <i>B.S. in Computer Science</i>
                 </h6>
-                <small class="font-weight-light">Seotenber 2015 - April 2021</small>
+                <small class="font-weight-light">Seotenber 2015 - May 2021</small>
                 <ul>
                   <li>Completed a 14 months long Co-op / Internship program.</li>
                 </ul>
@@ -169,20 +169,20 @@ function About() {
               <h4>SKILLS</h4>
               <hr />
               <ul className="list-clean font-weight-light">
-                <li>JavaScript (ReactJS, Node.js, jQuery)</li>
+                <li>JavaScript (ReactJS, Node.js, TypeScript)</li>
                 <li>HTML/CSS</li>
-                <li>C# (ASP.NET Core)</li>
+                <li>C# (.NET Core)</li>
                 <li>SQL (MSSQL)</li>
                 <li>Java</li>
                 <li>Python</li>
-                <li>C++ (OpenGL)</li>
                 <br />
-                <li>Azure DevOps (CI/CD)</li>
-                <li>Azure Stroage</li>
+                <li>Git</li>
+                <li>Azure</li>
+                <li>Azure DevOps</li>
+                <li>Amazon Web Services</li>
                 <li>Visual Studio</li>
                 <li>Visual Studio Code</li>
-                <li>Amazon Web Services</li>
-                <li>Git</li>
+                <li>Android</li>
               </ul>
             </Col>
             <Col xs={12} className="about-section mb-3">
