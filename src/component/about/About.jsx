@@ -75,7 +75,7 @@ function About() {
               <hr />
               <div className="px-3 mb-2">
                 <h6 className="mb-0">
-                  Detechtion Technologies — <i>Staff Software Developer</i>
+                  Detechtion Technologies — <i>Associate Software Developer</i>
                 </h6>
                 <small class="font-weight-light">September 2021 - PRESENT</small>
                 <ul>
