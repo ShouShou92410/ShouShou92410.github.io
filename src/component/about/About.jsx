@@ -79,9 +79,9 @@ function About() {
                 </h6>
                 <small class="font-weight-light">September 2021 - PRESENT</small>
                 <ul>
-                  <li>Maintain a hybrid mobile application that supports around 20 different client versions at the same time.</li>
-                  <li>Helped upgrade the backend infrastructures and project dependencies of the hybrid mobile application.</li>
                   <li>Designing and developing a React Native project from scratch.</li>
+                  <li>Manage a hybrid mobile application with around 20 different client versions hosted on the EC2 instances.</li>
+                  <li>Helped upgrade the backend infrastructures and project dependencies of the hybrid mobile application.</li>
                 </ul>
               </div>
               <div className="px-3 mb-2">
@@ -90,9 +90,11 @@ function About() {
                 </h6>
                 <small class="font-weight-light">June 2019 - September 2021</small>
                 <ul>
-                  <li>Worked in an agile team of 5 that maintains and builds infrastructures that manage thousands of client data.</li>
-                  <li>Helped set up the foundations for an API project and a ReactJS project, such as CRUD endpoints and web app routing.</li>
-                  <li>Responsible for adding and testing features to a website for hundreds of clients to interact with.</li>
+                  <li>Worked in an agile team of 5 that implements features for a website that manages thousands of client data.</li>
+                  <li>Implemented more than 10 API endpoints for internal and external uses using .Net.</li>
+                  <li>
+                    Developed majority of the core functionalities of a ReactJS project for the users to interact with data, such as the data inputs.
+                  </li>
                 </ul>
               </div>
             </Col>
@@ -171,7 +173,7 @@ function About() {
               <ul className="list-clean font-weight-light">
                 <li>JavaScript (ReactJS, Node.js, TypeScript)</li>
                 <li>HTML/CSS</li>
-                <li>C# (.NET Core)</li>
+                <li>C# (.NET)</li>
                 <li>SQL (MSSQL)</li>
                 <li>Java</li>
                 <li>Python</li>
