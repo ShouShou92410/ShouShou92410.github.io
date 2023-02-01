@@ -7,6 +7,9 @@
 <div class="app">
 	<Header />
 
+	<div class="fixed top-1/2 left-5 right-auto">social links</div>
+	<nav class="fixed top-1/2 left-auto right-5">side nav</nav>
+
 	<main>
 		<slot />
 	</main>

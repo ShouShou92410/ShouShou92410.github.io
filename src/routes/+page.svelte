@@ -28,6 +28,14 @@
 	<Counter />
 </section>
 
+<section>Greet</section>
+<section>About</section>
+<section>Education</section>
+<section>Experience</section>
+<section>Project</section>
+<section>Skill</section>
+<section>Contact</section>
+
 <style>
 	section {
 		display: flex;
