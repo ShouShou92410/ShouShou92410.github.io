@@ -28,6 +28,7 @@
 	<Counter />
 </section> -->
 
+<h1 class="text-primary">Hello</h1>
 <section>Greet</section>
 <section>About</section>
 <section>Education</section>
