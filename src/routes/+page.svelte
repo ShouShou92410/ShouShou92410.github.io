@@ -27,7 +27,7 @@
 
 	<Counter />
 </section> -->
-<section>
+<section id="greet">
 	<p>Hello, my name is</p>
 	<h1>Sean Wen</h1>
 	<p>
@@ -37,12 +37,12 @@
 		<a href="https://www.detechtion.com">Detechtion Technologies</a>
 	</p>
 </section>
-<section>About</section>
-<section>Education</section>
-<section>Experience</section>
-<section>Project</section>
-<section>Skill</section>
-<section>Contact</section>
+<section id="about">About</section>
+<section id="education">Education</section>
+<section id="experience">Experience</section>
+<section id="project">Project</section>
+<section id="skill">Skill</section>
+<section id="contact">Contact</section>
 
 <style>
 	section {
