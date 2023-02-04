@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-mono min-h-screen bg-purple-900 text-slate-300;
+	}
+	h1 {
+		@apply text-2xl;
+	}
+	h2 {
+		@apply text-xl;
+	}
+	h3 {
+		@apply text-lg;
+	}
+	a {
+		@apply relative text-primary;
+	}
+	a::after {
+		@apply content-[''] absolute bottom-0 left-0 w-full h-px bg-primary origin-center duration-300 scale-0;
+	}
+	a:hover::after,
+	a:focus::after {
+		@apply scale-100;
+	}
+
+	p {
+		@apply leading-6 font-medium;
+	}
+}

@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Sean Wen</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -27,9 +27,16 @@
 
 	<Counter />
 </section> -->
-
-<h1 class="text-primary">Hello</h1>
-<section>Greet</section>
+<section>
+	<p>Hello, my name is</p>
+	<h1>Sean Wen</h1>
+	<p>
+		I'm a software developer based in Calgary, Alberta, Canada. <br />
+		I specialized in developing web applications using cutting-edge technologies. <br />
+		Currently working as an Associate Software Developer in
+		<a href="https://www.detechtion.com">Detechtion Technologies</a>
+	</p>
+</section>
 <section>About</section>
 <section>Education</section>
 <section>Experience</section>
