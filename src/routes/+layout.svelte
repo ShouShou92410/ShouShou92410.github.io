@@ -10,13 +10,26 @@
 
 <!-- <Header /> -->
 
-<div class="fixed top-1/2 left-5 right-auto">
-	<img src={github} alt="GitHub" class="w-10" />
-	<img src={linkedin} alt="LinkedIn" class="w-10" />
-	<img src={email} alt="email" class="w-10" />
-	<img src={resume} alt="resume" class="w-10" />
+<div class="fixed flex flex-col top-1/2 left-5 right-auto gap-3">
+	<a href="https://github.com/ShouShou92410" class="flex items-center animated-icon">
+		<img src={github} alt="GitHub" class="w-10 duration-300" />
+		<span class="font-semibold text-xl overflow-hidden pl-3 duration-300 w-0">GitHub</span>
+	</a>
+	<a href="https://www.linkedin.com/in/yuhsiangwen/" class="flex items-center animated-icon">
+		<img src={linkedin} alt="LinkedIn" class="w-10 duration-300" />
+		<span class="font-semibold text-xl overflow-hidden pl-3 duration-300 w-0">LinkedIn</span>
+	</a>
+	<a href="mailto:sw92410@hotmail.com" class="flex items-center animated-icon">
+		<img src={email} alt="email" class="w-10 duration-300" />
+		<span class="font-semibold text-xl overflow-hidden pl-3 duration-300 w-0">Email</span>
+	</a>
+	<a href={resume} class="flex items-center animated-icon">
+		<img src={resume} alt="resume" class="w-10 duration-300" />
+		<span class="font-semibold text-xl overflow-hidden pl-3 duration-300 w-0">Resume</span>
+	</a>
 </div>
 <nav class="flex flex-col fixed top-1/2 left-auto right-5">
+	<a href="/">Home</a>
 	<a href="#about">About</a>
 	<a href="#education">Education</a>
 	<a href="#experience">Experience</a>
@@ -32,3 +45,12 @@
 <!-- <footer>
 	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 </footer> -->
+<style>
+	/* TODO: Move this to a components */
+	.animated-icon:hover > img {
+		@apply scale-125;
+	}
+	.animated-icon:hover > span {
+		@apply delay-75 duration-500 w-full;
+	}
+</style>

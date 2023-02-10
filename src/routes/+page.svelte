@@ -27,7 +27,7 @@
 
 	<Counter />
 </section> -->
-<section id="greet">
+<section>
 	<p>Hello, my name is</p>
 	<h1>Sean Wen</h1>
 	<p>
@@ -51,5 +51,6 @@
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
+		min-height: 100vh;
 	}
 </style>

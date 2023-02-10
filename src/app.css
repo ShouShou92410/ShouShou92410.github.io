@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		@apply scroll-smooth;
+	}
 	body {
 		@apply font-mono min-h-screen bg-purple-900 text-slate-300;
 	}
@@ -16,17 +19,23 @@
 		@apply text-lg;
 	}
 	a {
-		@apply relative text-primary;
+		@apply text-primary;
 	}
-	a::after {
-		@apply content-[''] absolute bottom-0 left-0 w-full h-px bg-primary origin-center duration-300 scale-0;
-	}
-	a:hover::after,
-	a:focus::after {
-		@apply scale-100;
-	}
-
 	p {
 		@apply leading-6 font-medium;
+	}
+	nav a,
+	p a {
+		@apply relative w-max;
+	}
+	nav a::after,
+	p a::after {
+		@apply content-[''] absolute bottom-0 left-0 w-full h-px bg-primary origin-center duration-300 scale-0;
+	}
+	nav a:hover::after,
+	p a:hover::after,
+	nav a:focus::after,
+	p a:focus::after {
+		@apply scale-100;
 	}
 }
