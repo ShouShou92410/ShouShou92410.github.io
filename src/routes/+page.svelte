@@ -38,11 +38,32 @@
 	</p>
 </section>
 <section id="about">About</section>
-<section id="education">Education</section>
-<section id="experience">Experience</section>
-<section id="project">Project</section>
-<section id="skill">Skill</section>
-<section id="contact">Contact</section>
+<section id="education">
+	<p>University of Calgary</p>
+	<p>B.S.in Computer Science</p>
+	<p>September 2015 - May 2021</p>
+	<p>Completed a 14 months long internship program.</p>
+</section>
+<section id="experience">
+	<p>Detechtion Technologies — Associate Software Developer</p>
+	<p>September 2021 - Present</p>
+	<p>Detechtion Technologies — Software Intern (Part time)</p>
+	<p>September 2020 - September 2021</p>
+	<p>Detechtion Technologies — Software Intern</p>
+	<p>June 2019 - August 2020</p>
+</section>
+<section id="project">
+	<p>ShouShou92410.github.io</p>
+	<p>All Chat</p>
+	<p>ImHere</p>
+	<p>Character Changer</p>
+</section>
+<section id="skill">
+	<p>JLPT N4</p>
+</section>
+<section id="contact">
+	<p>Email</p>
+</section>
 
 <style>
 	section {
