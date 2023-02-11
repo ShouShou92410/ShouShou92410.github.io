@@ -1,0 +1,9 @@
+<nav class="flex flex-col items-end fixed top-1/3 right-10">
+	<a href="/">Home</a>
+	<a href="#about">About</a>
+	<a href="#education">Education</a>
+	<a href="#experience">Experience</a>
+	<a href="#project">Project</a>
+	<a href="#skill">Skill</a>
+	<a href="#contact">Contact</a>
+</nav>
