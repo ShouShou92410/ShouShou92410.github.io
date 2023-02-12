@@ -10,13 +10,17 @@
 		@apply font-mono min-h-screen bg-purple-900 text-slate-300;
 	}
 	h1 {
-		@apply text-2xl;
+		@apply 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl;
 	}
 	h2 {
-		@apply text-xl;
+		@apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl;
 	}
 	h3 {
-		@apply text-lg;
+		@apply 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg;
+	}
+	a,
+	p {
+		@apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs;
 	}
 	a {
 		@apply text-primary;

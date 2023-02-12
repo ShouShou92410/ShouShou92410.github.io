@@ -7,3 +7,9 @@
 	<a href="#skill">Skill</a>
 	<a href="#contact">Contact</a>
 </nav>
+
+<style lang="postcss">
+	a {
+		@apply 2xl:text-xl xl:text-lg lg:text-base md:text-sm text-xs;
+	}
+</style>

@@ -24,7 +24,7 @@
 	</a>
 </div>
 
-<style>
+<style lang="postcss">
 	a:hover > img {
 		@apply scale-125;
 	}
