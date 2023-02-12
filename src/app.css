@@ -20,13 +20,13 @@
 	}
 	a,
 	p {
-		@apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs;
+		@apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs 2xl:leading-9 xl:leading-8 lg:leading-7 md:leading-6 sm:leading-5 leading-4;
 	}
 	a {
 		@apply text-primary;
 	}
 	p {
-		@apply leading-6 font-medium;
+		@apply font-medium;
 	}
 	nav a,
 	p a {
