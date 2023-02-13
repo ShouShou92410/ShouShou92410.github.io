@@ -1,9 +1,10 @@
 <script>
 	import pp from '$lib/images/pp.jpg';
-	import ContentSection from '$lib/components/ContentSection.svelte';
 </script>
 
-<ContentSection id="about">
+<section id="about" class="flex flex-col w-2/3 min-h-screen justify-center m-auto">
+	<h1>About</h1>
+	<hr />
 	<p>
 		<img src={pp} alt="ProfilePicture" class="w-44 rounded-full float-left" />
 		👋Hello, my name is Sean. I was born in Kaohsiung, Taiwan, and moved to Calgary at the age of 12.
@@ -24,4 +25,4 @@
 		applications, as well as adding new features to make our customers more effective with their
 		data.
 	</p>
-</ContentSection>
+</section>
