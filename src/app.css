@@ -19,7 +19,7 @@
 		@apply font-mono min-h-screen bg-purple-900 text-slate-300;
 	}
 	h1 {
-		@apply 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl;
+		@apply 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl w-max;
 	}
 	h2 {
 		@apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl;
