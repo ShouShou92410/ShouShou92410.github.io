@@ -1,4 +1,7 @@
-<section id="education" class="flex flex-col w-2/3 min-h-screen justify-center m-auto">
+<section
+	id="education"
+	class="flex flex-col w-2/3 min-h-1/2 justify-center m-auto py-12 text-right"
+>
 	<h1>Education</h1>
 	<hr />
 	<p>University of Calgary</p>

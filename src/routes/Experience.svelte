@@ -1,4 +1,6 @@
-<section id="experience" class="flex flex-col w-2/3 min-h-screen justify-center m-auto">
+<section id="experience" class="flex flex-col w-2/3 min-h-1/2 justify-center m-auto py-12">
+	<h1>Experience</h1>
+	<hr />
 	<p>Detechtion Technologies — Associate Software Developer</p>
 	<p>September 2021 - Present</p>
 	<p>Detechtion Technologies — Software Intern (Part time)</p>
