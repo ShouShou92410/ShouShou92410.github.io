@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+	::-webkit-scrollbar {
+		@apply w-3;
+	}
+	::-webkit-scrollbar-track {
+		@apply bg-purple-900 rounded-md;
+	}
+	::-webkit-scrollbar-thumb {
+		@apply bg-purple-500 border-solid border-2 rounded-md border-purple-900;
+	}
 	html {
 		@apply scroll-smooth;
 	}
