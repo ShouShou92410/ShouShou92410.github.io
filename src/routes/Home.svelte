@@ -1,4 +1,4 @@
-<section id="" class="flex flex-col w-2/3 min-h-screen justify-center m-auto">
+<section id="" class="flex flex-col w-full min-h-screen justify-center m-auto">
 	<p>
 		👋Hello, my name is
 		<span

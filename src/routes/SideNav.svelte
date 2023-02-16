@@ -1,4 +1,4 @@
-<nav class="flex flex-col items-end fixed top-1/3 right-10">
+<nav class="hidden md:flex flex-col items-end fixed top-1/3 right-10 ">
 	<a href="/">Home</a>
 	<a href="#about">About</a>
 	<a href="#education">Education</a>

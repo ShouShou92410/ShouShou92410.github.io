@@ -6,6 +6,6 @@
 
 <SocialLinks />
 <SideNav />
-<main class="flex flex-grow flex-col p-1">
+<main class="flex flex-grow flex-col justify-center mx-auto p-1 md:w-2/3 w-11/12">
 	<slot />
 </main>

@@ -4,7 +4,7 @@
 
 @layer base {
 	::-webkit-scrollbar {
-		@apply w-3;
+		@apply w-2.5;
 	}
 	::-webkit-scrollbar-track {
 		@apply bg-purple-900 rounded-md;
