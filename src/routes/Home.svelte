@@ -2,8 +2,9 @@
 	<p>
 		👋Hello, my name is
 		<span
-			class="2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold text-purple-300"
-			>Sean Wen</span
+			class="2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold"
+		>
+			Sean Wen</span
 		>.
 	</p>
 	<br />

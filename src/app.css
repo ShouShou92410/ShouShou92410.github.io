@@ -28,7 +28,8 @@
 		@apply 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg;
 	}
 	a,
-	p {
+	p,
+	li {
 		@apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs 2xl:leading-9 xl:leading-8 lg:leading-7 md:leading-6 sm:leading-5 leading-4;
 	}
 	a {
@@ -37,16 +38,20 @@
 	p {
 		@apply font-medium;
 	}
+	a h3,
 	nav a,
 	p a {
 		@apply relative w-max;
 	}
+	a h3::after,
 	nav a::after,
 	p a::after {
 		@apply content-[''] absolute bottom-0 left-0 w-full h-px bg-primary origin-center duration-300 scale-0;
 	}
+	a h3:hover::after,
 	nav a:hover::after,
 	p a:hover::after,
+	a h3:focus::after,
 	nav a:focus::after,
 	p a:focus::after {
 		@apply scale-100;

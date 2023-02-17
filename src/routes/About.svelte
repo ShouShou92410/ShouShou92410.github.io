@@ -2,7 +2,7 @@
 	import pp from '$lib/images/pp.jpg';
 </script>
 
-<section id="about" class="flex flex-col w-full min-h-1/2 justify-center m-auto py-12">
+<section id="about" class="flex flex-col w-full min-h-1/2 justify-center m-auto md:py-12 py-3">
 	<div class="flex justify-end items-center">
 		<h1 class="pr-3">About</h1>
 		<hr class="grow" />

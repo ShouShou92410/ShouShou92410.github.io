@@ -1,9 +1,9 @@
-<section id="experience" class="flex flex-col w-full min-h-1/2 justify-center m-auto py-12">
+<section id="experience" class="flex flex-col w-full min-h-1/2 justify-center m-auto md:py-12 py-3">
 	<div class="flex justify-end items-center">
 		<h1 class="pr-3">Experience</h1>
 		<hr class="grow" />
 	</div>
-	<div>
+	<div class="text-right">
 		<p>Detechtion Technologies — Associate Software Developer</p>
 		<p>September 2021 - Present</p>
 		<p>Detechtion Technologies — Software Intern (Part time)</p>
