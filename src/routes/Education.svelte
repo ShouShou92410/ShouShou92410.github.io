@@ -4,7 +4,9 @@
 		<h1 class="pl-3">Education</h1>
 	</div>
 	<div>
-		<a href="https://www.ucalgary.ca"><h3>University of Calgary</h3></a>
+		<a class="flex" href="https://www.ucalgary.ca">
+			<h3>University of Calgary</h3>
+		</a>
 		<div class="pl-3">
 			<p class="font-bold">Bachelor of Science - Computer Science</p>
 			<p class="lg:text-base sm:text-base text-xs italic">September 2015 - May 2021</p>
