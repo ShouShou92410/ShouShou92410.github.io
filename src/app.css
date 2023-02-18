@@ -29,6 +29,7 @@
 	}
 	a,
 	p,
+	span,
 	li {
 		@apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs 2xl:leading-9 xl:leading-8 lg:leading-7 md:leading-6 sm:leading-5 leading-4;
 	}
