@@ -3,7 +3,7 @@
 		<h1 class="pr-3">Experience</h1>
 		<hr class="grow" />
 	</div>
-	<div>
+	<div class="md:pt-6 pt-3">
 		<a class="flex justify-center" href="https://www.detechtion.com">
 			<h3>Detechtion Technologies</h3>
 		</a>

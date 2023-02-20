@@ -3,7 +3,7 @@
 		<hr class="grow" />
 		<h1 class="pl-3">Education</h1>
 	</div>
-	<div>
+	<div class="md:pt-6 pt-3">
 		<a class="flex" href="https://www.ucalgary.ca">
 			<h3>University of Calgary</h3>
 		</a>
