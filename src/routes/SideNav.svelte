@@ -5,7 +5,6 @@
 	<a href="#experience">Experience</a>
 	<a href="#project">Project</a>
 	<a href="#skill">Skill</a>
-	<a href="#contact">Contact</a>
 </nav>
 
 <style lang="postcss">

@@ -5,7 +5,6 @@
 	import Experience from './Experience.svelte';
 	import Project from './Project.svelte';
 	import Skill from './Skill.svelte';
-	import Contact from './Contact.svelte';
 </script>
 
 <svelte:head>
@@ -19,4 +18,3 @@
 <Experience />
 <Project />
 <Skill />
-<Contact />
