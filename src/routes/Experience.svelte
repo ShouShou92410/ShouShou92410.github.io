@@ -14,16 +14,9 @@
 			</div>
 			<div class="border-l-2 border-primary text-left">
 				<ul class="list-disc pl-10">
-					<li class="md:py-1 py-0.5">Lorem ipsum dolor sit amet</li>
 					<li class="md:py-1 py-0.5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo eius facilis
-						magni suscipit exercitationem, placeat, laboriosam quia maiores ut dolor ipsum ullam
-						fuga deleniti, corrupti pariatur? Consectetur, ea voluptatum!
-					</li>
-					<li class="md:py-1 py-0.5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo eius facilis
-						magni suscipit exercitationem, placeat, laboriosam quia maiores ut dolor ipsum ullam
-						fuga deleniti, corrupti pariatur? Consectetur, ea voluptatum!
+						Designed and developed an integration testing process using Javascript that tests
+						against a simulator running on a docker. Which had over 60 different test cases.
 					</li>
 				</ul>
 			</div>
@@ -33,16 +26,22 @@
 			</div>
 			<div class="border-l-2 border-primary text-left">
 				<ul class="list-disc pl-10">
-					<li class="md:py-1 py-0.5">Lorem ipsum dolor sit amet</li>
 					<li class="md:py-1 py-0.5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo eius facilis
-						magni suscipit exercitationem, placeat, laboriosam quia maiores ut dolor ipsum ullam
-						fuga deleniti, corrupti pariatur? Consectetur, ea voluptatum!
+						Setup and developed 5 pipelines that handles data ETL for data analytic purposes. Used
+						Azure Data Factory to schedule the data extraction from our SQL servers, Databricks for
+						data transformation, and PowerBI for loading the transformed data in PowerBI reports.
 					</li>
 					<li class="md:py-1 py-0.5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo eius facilis
-						magni suscipit exercitationem, placeat, laboriosam quia maiores ut dolor ipsum ullam
-						fuga deleniti, corrupti pariatur? Consectetur, ea voluptatum!
+						Designing and developing a React Native application that interacts with a custom
+						hardware using bluetooth connection
+					</li>
+					<li class="md:py-1 py-0.5">
+						Implementing API endpoints for the React Native app to sync up the data from the custom
+						hardware
+					</li>
+					<li class="md:py-1 py-0.5">
+						Manage and upgrade a hybrid mobile application with around 20 different client versions
+						hosted on the EC2 instances
 					</li>
 				</ul>
 			</div>
@@ -52,16 +51,13 @@
 			</div>
 			<div class="border-l-2 border-primary text-left pl-3">
 				<ul class="list-disc pl-10">
-					<li class="md:py-1 py-0.5">Lorem ipsum dolor sit amet</li>
 					<li class="md:py-1 py-0.5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo eius facilis
-						magni suscipit exercitationem, placeat, laboriosam quia maiores ut dolor ipsum ullam
-						fuga deleniti, corrupti pariatur? Consectetur, ea voluptatum!
+						Worked on a feature that allows all of our Canadian clients to use and be compliance
+						with Alberta government's environmental regulation
 					</li>
 					<li class="md:py-1 py-0.5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo eius facilis
-						magni suscipit exercitationem, placeat, laboriosam quia maiores ut dolor ipsum ullam
-						fuga deleniti, corrupti pariatur? Consectetur, ea voluptatum!
+						Improve visibility of the updated data entry feature to transition users away from
+						legacy functionalities
 					</li>
 				</ul>
 			</div>
@@ -71,16 +67,16 @@
 			</div>
 			<div class="border-l-2 border-primary text-left pl-3">
 				<ul class="list-disc pl-10">
-					<li class="md:py-1 py-0.5">Lorem ipsum dolor sit amet</li>
 					<li class="md:py-1 py-0.5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo eius facilis
-						magni suscipit exercitationem, placeat, laboriosam quia maiores ut dolor ipsum ullam
-						fuga deleniti, corrupti pariatur? Consectetur, ea voluptatum!
+						Worked in an agile team of 5 that implements features for a website that manages
+						thousands of client data
 					</li>
 					<li class="md:py-1 py-0.5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo eius facilis
-						magni suscipit exercitationem, placeat, laboriosam quia maiores ut dolor ipsum ullam
-						fuga deleniti, corrupti pariatur? Consectetur, ea voluptatum!
+						Implemented more than 10 API endopints for internal and external use with .Net
+					</li>
+					<li class="md:py-1 py-0.5">
+						Developed majority of the core functionalities of a ReactJS project for the users to
+						interact with data, such as the data inputs
 					</li>
 				</ul>
 			</div>
