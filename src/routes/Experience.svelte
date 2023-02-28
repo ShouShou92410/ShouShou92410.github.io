@@ -32,16 +32,18 @@
 						data transformation, and PowerBI for loading the transformed data in PowerBI reports.
 					</li>
 					<li class="md:py-1 py-0.5">
-						Designing and developing a React Native application that interacts with a custom
-						hardware using bluetooth connection
+						Created a web application that serves as a central login page for all of our products
+						using Next.js in only 2 weeks.
 					</li>
 					<li class="md:py-1 py-0.5">
-						Implementing API endpoints for the React Native app to sync up the data from the custom
-						hardware
+						Designed and developed a React Native application that interacts with an embedded
+						software using bluetooth connection. Created a queue process that runs in the background
+						of the application to handle data synchronization in the case of the hardware device
+						going offline.
 					</li>
 					<li class="md:py-1 py-0.5">
-						Manage and upgrade a hybrid mobile application with around 20 different client versions
-						hosted on the EC2 instances
+						Manage and upgrade a Cordova application with around 20 different client versions hosted
+						on the EC2 instances.
 					</li>
 				</ul>
 			</div>
@@ -53,11 +55,11 @@
 				<ul class="list-disc pl-10">
 					<li class="md:py-1 py-0.5">
 						Worked on a feature that allows all of our Canadian clients to use and be compliance
-						with Alberta government's environmental regulation
+						with Alberta government's environmental regulation.
 					</li>
 					<li class="md:py-1 py-0.5">
 						Improve visibility of the updated data entry feature to transition users away from
-						legacy functionalities
+						legacy functionalities.
 					</li>
 				</ul>
 			</div>
@@ -68,15 +70,15 @@
 			<div class="border-l-2 border-primary text-left pl-3">
 				<ul class="list-disc pl-10">
 					<li class="md:py-1 py-0.5">
-						Worked in an agile team of 5 that implements features for a website that manages
-						thousands of client data
+						Worked in an agile team of 5 to rebuild a 10 years old web application with ReactJS and
+						followed a single page application desgin.
 					</li>
 					<li class="md:py-1 py-0.5">
-						Implemented more than 10 API endopints for internal and external use with .Net
+						Developed 20 different internal and external API endopints using .Net Core.
 					</li>
 					<li class="md:py-1 py-0.5">
-						Developed majority of the core functionalities of a ReactJS project for the users to
-						interact with data, such as the data inputs
+						Implemented many core functionalities of the ReactJS application, such as page routing
+						and data entry.
 					</li>
 				</ul>
 			</div>
