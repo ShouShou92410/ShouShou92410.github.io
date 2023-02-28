@@ -7,9 +7,9 @@
 		<hr class="grow" />
 		<h1 class="pl-3">About</h1>
 	</div>
-	<div>
+	<div class="md:pt-6 pt-3">
 		<p>
-			<img src={pp} alt="ProfilePicture" class="w-44 rounded-lg float-left mb-1 mr-3" />
+			<img src={pp} alt="ProfilePicture" class="w-44 rounded-lg float-right mb-1 mr-3" />
 			👋Hello, my name is Sean. I was born in Kaohsiung, Taiwan, and moved to Calgary at the age of 12.
 			My programming journey began with me trying to modify the CSS styles of a now closed Taiwanese
 			blog site, <a href="https://en.wikipedia.org/wiki/Wretch_(website)">無名小站</a>, and I've

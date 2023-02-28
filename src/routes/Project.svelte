@@ -18,9 +18,9 @@
 					facilis aspernatur explicabo ducimus obcaecati, qui nobis?
 				</p>
 				<div class="flex gap-x-3">
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
 				</div>
 				<div class="flex gap-x-3">
 					<a href="https://github.com/ShouShou92410/ShouShou92410.github.io">
@@ -41,9 +41,9 @@
 					facilis aspernatur explicabo ducimus obcaecati, qui nobis?
 				</p>
 				<div class="flex gap-x-3">
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
 				</div>
 				<div class="flex gap-x-3">
 					<a href="https://github.com/ShouShou92410/AllChat">
@@ -64,9 +64,9 @@
 					facilis aspernatur explicabo ducimus obcaecati, qui nobis?
 				</p>
 				<div class="flex gap-x-3">
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
 				</div>
 				<div class="flex gap-x-3">
 					<a href="https://github.com/ShouShou92410/ImHere">
@@ -87,9 +87,9 @@
 					facilis aspernatur explicabo ducimus obcaecati, qui nobis?
 				</p>
 				<div class="flex gap-x-3">
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
-					<p class="lg:text-base sm:text-base text-xs italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
+					<p class="italic">JavaScript</p>
 				</div>
 				<div class="flex gap-x-3">
 					<a href="https://github.com/ShouShou92410/CharacterChanger">
