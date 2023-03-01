@@ -1,6 +1,5 @@
 <script>
 	import Github from '$lib/images/Github.svelte';
-	import github from '$lib/images/github.svg';
 </script>
 
 <section id="project" class="flex flex-col w-full min-h-1/2 justify-center m-auto md:py-12 py-3">
@@ -9,95 +8,106 @@
 		<h1 class="pl-3">Project</h1>
 	</div>
 	<div class="flex flex-col gap-y-5 md:pt-6 pt-3">
-		<div class="flex lg:flex-row flex-col">
-			<div class="lg:w-1/3 h-60 bg-primary" />
-			<div class="flex flex-col lg:w-2/3 items-end gap-y-5">
-				<h3>shoushou92410.github.io</h3>
-				<p class="text-right">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, a. Odio dolorum
-					facilis aspernatur explicabo ducimus obcaecati, qui nobis?
-				</p>
-				<div class="flex gap-x-3">
-					<p class="italic">JavaScript</p>
-					<p class="italic">JavaScript</p>
-					<p class="italic">JavaScript</p>
+		<div
+			class="flex lg:flex-row flex-col rounded-2xl bg-purple-800 md:px-10 md:py-8 px-5 py-4 gap-5"
+		>
+			<div class="lg:w-1/3 rounded-xl bg-primary" />
+			<div class="flex flex-col lg:w-2/3 justify-between gap-y-10">
+				<div class="flex flex-col md:gap-y-3 gap-y-1">
+					<h3>shoushou92410.github.io</h3>
+					<p>My personal website.</p>
 				</div>
-				<div class="flex gap-x-3">
-					<a href="https://github.com/ShouShou92410/ShouShou92410.github.io">
-						<Github cssClass="w-8 h-8 fill-purple-200" />
-					</a>
-					<a href="https://github.com/ShouShou92410/ShouShou92410.github.io">
-						<Github cssClass="w-8 h-8 fill-purple-200" />
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="flex lg:flex-row flex-col">
-			<div class="lg:w-1/3 h-60 bg-primary" />
-			<div class="flex flex-col lg:w-2/3 items-end gap-y-5">
-				<h3>All Chat</h3>
-				<p class="text-right">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, a. Odio dolorum
-					facilis aspernatur explicabo ducimus obcaecati, qui nobis?
-				</p>
-				<div class="flex gap-x-3">
-					<p class="italic">JavaScript</p>
-					<p class="italic">JavaScript</p>
-					<p class="italic">JavaScript</p>
-				</div>
-				<div class="flex gap-x-3">
-					<a href="https://github.com/ShouShou92410/AllChat">
-						<Github cssClass="w-8 h-8 fill-purple-200" />
-					</a>
-					<a href="https://github.com/ShouShou92410/AllChat">
-						<Github cssClass="w-8 h-8 fill-purple-200" />
-					</a>
+				<div class="flex md:flex-row flex-col justify-between gap-5">
+					<div class="flex gap-x-3">
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
+							Svelte
+						</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
+							Tailwind
+						</p>
+					</div>
+					<div class="flex gap-x-5">
+						<a href="https://github.com/ShouShou92410/ShouShou92410.github.io">
+							<Github cssClass="w-7 h-7 fill-purple-200" />
+						</a>
+						<a href="/">
+							<Github cssClass="w-7 h-7 fill-purple-200" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="flex lg:flex-row flex-col">
-			<div class="lg:w-1/3 h-60 bg-primary" />
-			<div class="flex flex-col lg:w-2/3 items-end gap-y-5">
-				<h3>ImHere</h3>
-				<p class="text-right">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, a. Odio dolorum
-					facilis aspernatur explicabo ducimus obcaecati, qui nobis?
-				</p>
-				<div class="flex gap-x-3">
-					<p class="italic">JavaScript</p>
-					<p class="italic">JavaScript</p>
-					<p class="italic">JavaScript</p>
+		<div
+			class="flex lg:flex-row flex-col rounded-2xl bg-purple-800 md:px-10 md:py-8 px-5 py-4 gap-5"
+		>
+			<div class="lg:w-1/3 rounded-xl bg-primary" />
+			<div class="flex flex-col lg:w-2/3 justify-between gap-y-10">
+				<div class="flex flex-col md:gap-y-3 gap-y-1">
+					<h3>All Chat</h3>
+					<p>A simple web chat for everyone to chat anonymously.</p>
 				</div>
-				<div class="flex gap-x-3">
-					<a href="https://github.com/ShouShou92410/ImHere">
-						<Github cssClass="w-8 h-8 fill-purple-200" />
-					</a>
-					<a href="https://github.com/ShouShou92410/ImHere">
-						<Github cssClass="w-8 h-8 fill-purple-200" />
-					</a>
+				<div class="flex md:flex-row flex-col justify-between gap-5">
+					<div class="flex gap-x-3">
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
+							WebSocket
+						</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
+							Next.js
+						</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
+							Express
+						</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Azure</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Deta</p>
+					</div>
+					<div class="flex gap-x-5">
+						<a href="https://github.com/ShouShou92410/AllChat">
+							<Github cssClass="w-7 h-7 fill-purple-200" />
+						</a>
+						<a href="https://allchat.azurewebsites.net/">
+							<Github cssClass="w-7 h-7 fill-purple-200" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="flex lg:flex-row flex-col">
-			<div class="lg:w-1/3 h-60 bg-primary" />
-			<div class="flex flex-col lg:w-2/3 items-end gap-y-5">
-				<h3>Character Changer</h3>
-				<p class="text-right">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, a. Odio dolorum
-					facilis aspernatur explicabo ducimus obcaecati, qui nobis?
-				</p>
-				<div class="flex gap-x-3">
-					<p class="italic">JavaScript</p>
-					<p class="italic">JavaScript</p>
-					<p class="italic">JavaScript</p>
+		<div
+			class="flex lg:flex-row flex-col rounded-2xl bg-purple-800 md:px-10 md:py-8 px-5 py-4 gap-5"
+		>
+			<div class="lg:w-1/3 rounded-xl bg-primary" />
+			<div class="flex flex-col lg:w-2/3 justify-between gap-y-10">
+				<div class="flex flex-col md:gap-y-3 gap-y-1">
+					<h3>Character Changer</h3>
+					<p>
+						A Java application that replaces characters in a given text file with other similar
+						looking characters.
+						<br />
+						<br />
+						This is my first time developing something with a user interface.
+					</p>
 				</div>
-				<div class="flex gap-x-3">
-					<a href="https://github.com/ShouShou92410/CharacterChanger">
-						<Github cssClass="w-8 h-8 fill-purple-200" />
-					</a>
-					<a href="https://github.com/ShouShou92410/CharacterChanger">
-						<Github cssClass="w-8 h-8 fill-purple-200" />
-					</a>
+				<div class="flex md:flex-row flex-col justify-between gap-5">
+					<div class="flex gap-x-3">
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
+							WebSocket
+						</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
+							Next.js
+						</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Java</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Swing</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
+							Eclipse
+						</p>
+					</div>
+					<div class="flex gap-x-5">
+						<a href="https://github.com/ShouShou92410/CharacterChanger">
+							<Github cssClass="w-7 h-7 fill-purple-200" />
+						</a>
+						<a href="https://github.com/ShouShou92410/CharacterChanger">
+							<Github cssClass="w-7 h-7 fill-purple-200" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
