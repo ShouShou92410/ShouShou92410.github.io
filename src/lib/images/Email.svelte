@@ -18,11 +18,6 @@
 	<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
 	<g id="SVGRepo_iconCarrier">
-		<style type="text/css">
-			.st0 {
-				fill: #ff6666;
-			}
-		</style>
 		<g>
 			<path
 				class="st0"

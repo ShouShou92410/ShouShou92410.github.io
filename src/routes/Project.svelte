@@ -1,5 +1,7 @@
 <script>
 	import Github from '$lib/images/Github.svelte';
+	import Link from '$lib/images/Link.svelte';
+	import Download from '$lib/images/Download.svelte';
 </script>
 
 <section id="project" class="flex flex-col w-full min-h-1/2 justify-center m-auto md:py-12 py-3">
@@ -17,7 +19,7 @@
 					<h3>shoushou92410.github.io</h3>
 					<p>My personal website.</p>
 				</div>
-				<div class="flex md:flex-row flex-col justify-between gap-5">
+				<div class="flex md:flex-row flex-col justify-between items-center gap-5">
 					<div class="flex gap-x-3">
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
 							Svelte
@@ -26,12 +28,12 @@
 							Tailwind
 						</p>
 					</div>
-					<div class="flex gap-x-5">
+					<div class="flex items-center gap-x-5">
 						<a href="https://github.com/ShouShou92410/ShouShou92410.github.io">
 							<Github cssClass="w-7 h-7 fill-purple-200" />
 						</a>
-						<a href="/">
-							<Github cssClass="w-7 h-7 fill-purple-200" />
+						<a href="https://shoushou92410.github.io/">
+							<Link cssClass="w-7 h-7 fill-purple-200" />
 						</a>
 					</div>
 				</div>
@@ -46,7 +48,7 @@
 					<h3>All Chat</h3>
 					<p>A simple web chat for everyone to chat anonymously.</p>
 				</div>
-				<div class="flex md:flex-row flex-col justify-between gap-5">
+				<div class="flex md:flex-row flex-col justify-between items-center gap-5">
 					<div class="flex gap-x-3">
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
 							WebSocket
@@ -60,12 +62,12 @@
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Azure</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Deta</p>
 					</div>
-					<div class="flex gap-x-5">
+					<div class="flex items-center gap-x-5">
 						<a href="https://github.com/ShouShou92410/AllChat">
 							<Github cssClass="w-7 h-7 fill-purple-200" />
 						</a>
 						<a href="https://allchat.azurewebsites.net/">
-							<Github cssClass="w-7 h-7 fill-purple-200" />
+							<Link cssClass="w-7 h-42 fill-purple-200" />
 						</a>
 					</div>
 				</div>
@@ -86,26 +88,20 @@
 						This is my first time developing something with a user interface.
 					</p>
 				</div>
-				<div class="flex md:flex-row flex-col justify-between gap-5">
+				<div class="flex md:flex-row flex-col justify-between items-center gap-5">
 					<div class="flex gap-x-3">
-						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
-							WebSocket
-						</p>
-						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
-							Next.js
-						</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Java</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Swing</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
 							Eclipse
 						</p>
 					</div>
-					<div class="flex gap-x-5">
+					<div class="flex items-center gap-x-5">
 						<a href="https://github.com/ShouShou92410/CharacterChanger">
 							<Github cssClass="w-7 h-7 fill-purple-200" />
 						</a>
-						<a href="https://github.com/ShouShou92410/CharacterChanger">
-							<Github cssClass="w-7 h-7 fill-purple-200" />
+						<a href="https://www.dropbox.com/s/bm84xctg204yl30/Character%20Replacer.jar?dl=0">
+							<Download cssClass="w-7 h-7 fill-purple-200" />
 						</a>
 					</div>
 				</div>
