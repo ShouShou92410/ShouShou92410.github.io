@@ -19,8 +19,8 @@
 					<h3>shoushou92410.github.io</h3>
 					<p>My personal website.</p>
 				</div>
-				<div class="flex md:flex-row flex-col justify-between items-center gap-5">
-					<div class="flex gap-x-3">
+				<div class="flex md:flex-row flex-col flex-wrap justify-between gap-5">
+					<div class="flex flex-wrap items-center gap-3">
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
 							Svelte
 						</p>
@@ -28,7 +28,7 @@
 							Tailwind
 						</p>
 					</div>
-					<div class="flex items-center gap-x-5">
+					<div class="flex flex-wrap items-center gap-3">
 						<a href="https://github.com/ShouShou92410/ShouShou92410.github.io">
 							<Github cssClass="w-7 h-7 fill-purple-200" />
 						</a>
@@ -46,10 +46,16 @@
 			<div class="flex flex-col lg:w-2/3 justify-between gap-y-10">
 				<div class="flex flex-col md:gap-y-3 gap-y-1">
 					<h3>All Chat</h3>
-					<p>A simple web chat for everyone to chat anonymously.</p>
+					<p>
+						A simple web chat for everyone to chat anonymously.
+						<br />
+						<br />
+						While working on this, I gained experience with Websocket and Tailwind. Additionally, I was
+						able to utilize my understanding of CICD and cloud services that I had learned from my work.
+					</p>
 				</div>
-				<div class="flex md:flex-row flex-col justify-between items-center gap-5">
-					<div class="flex gap-x-3">
+				<div class="flex md:flex-row flex-col flex-wrap justify-between gap-5">
+					<div class="flex flex-wrap items-center gap-3">
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
 							WebSocket
 						</p>
@@ -57,12 +63,15 @@
 							Next.js
 						</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
+							Tailwind
+						</p>
+						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
 							Express
 						</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Azure</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Deta</p>
 					</div>
-					<div class="flex items-center gap-x-5">
+					<div class="flex flex-wrap items-center gap-3">
 						<a href="https://github.com/ShouShou92410/AllChat">
 							<Github cssClass="w-7 h-7 fill-purple-200" />
 						</a>
@@ -85,18 +94,18 @@
 						looking characters.
 						<br />
 						<br />
-						This is my first time developing something with a user interface.
+						This was my first time developing something with a user interface.
 					</p>
 				</div>
-				<div class="flex md:flex-row flex-col justify-between items-center gap-5">
-					<div class="flex gap-x-3">
+				<div class="flex md:flex-row flex-col flex-wrap justify-between gap-5">
+					<div class="flex flex-wrap items-center gap-3">
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Java</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Swing</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
 							Eclipse
 						</p>
 					</div>
-					<div class="flex items-center gap-x-5">
+					<div class="flex flex-wrap items-center gap-3">
 						<a href="https://github.com/ShouShou92410/CharacterChanger">
 							<Github cssClass="w-7 h-7 fill-purple-200" />
 						</a>
