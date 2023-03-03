@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	::-webkit-scrollbar {
+		@apply w-2.5;
+	}
+	::-webkit-scrollbar-track {
+		@apply bg-purple-900 rounded-md;
+	}
+	::-webkit-scrollbar-thumb {
+		@apply bg-purple-500 border-solid border-2 rounded-md border-purple-900;
+	}
+	html {
+		@apply scroll-smooth;
+	}
+	body {
+		@apply font-mono min-h-screen bg-purple-900 text-slate-300;
+	}
+	h1 {
+		@apply 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl w-max;
+	}
+	h2 {
+		@apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl;
+	}
+	h3 {
+		@apply 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg h-max;
+	}
+	a,
+	p,
+	span,
+	li {
+		@apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs 2xl:leading-9 xl:leading-8 lg:leading-7 md:leading-6 sm:leading-5 leading-4;
+	}
+	a {
+		@apply text-primary;
+	}
+	p {
+		@apply font-medium;
+	}
+	a h3,
+	nav a,
+	p a {
+		@apply relative w-max;
+	}
+	a h3::after,
+	nav a::after,
+	p a::after {
+		@apply content-[''] absolute bottom-0 left-0 w-full h-px bg-primary origin-center duration-300 scale-0;
+	}
+	a h3:hover::after,
+	nav a:hover::after,
+	p a:hover::after,
+	a h3:focus::after,
+	nav a:focus::after,
+	p a:focus::after {
+		@apply scale-100;
+	}
+}
