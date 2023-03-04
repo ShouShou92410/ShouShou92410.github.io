@@ -18,14 +18,8 @@
 	body {
 		@apply font-mono min-h-screen bg-purple-900 text-slate-300;
 	}
-	h1 {
-		@apply 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl w-max;
-	}
-	h2 {
-		@apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl;
-	}
 	h3 {
-		@apply 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg h-max;
+		@apply 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl w-max;
 	}
 	a,
 	p,
@@ -39,20 +33,20 @@
 	p {
 		@apply font-medium;
 	}
-	a h3,
+	div a,
 	nav a,
 	p a {
 		@apply relative w-max;
 	}
-	a h3::after,
+	div a::after,
 	nav a::after,
 	p a::after {
 		@apply content-[''] absolute bottom-0 left-0 w-full h-px bg-primary origin-center duration-300 scale-0;
 	}
-	a h3:hover::after,
+	div a:hover::after,
 	nav a:hover::after,
 	p a:hover::after,
-	a h3:focus::after,
+	div a:focus::after,
 	nav a:focus::after,
 	p a:focus::after {
 		@apply scale-100;
