@@ -33,22 +33,14 @@
 	p {
 		@apply font-medium;
 	}
-	div a,
-	nav a,
-	p a {
+	a:not(.SocialIcon) {
 		@apply relative w-max;
 	}
-	div a::after,
-	nav a::after,
-	p a::after {
+	a:not(.SocialIcon)::after {
 		@apply content-[''] absolute bottom-0 left-0 w-full h-px bg-primary origin-center duration-300 scale-0;
 	}
-	div a:hover::after,
-	nav a:hover::after,
-	p a:hover::after,
-	div a:focus::after,
-	nav a:focus::after,
-	p a:focus::after {
+	a:not(.SocialIcon):hover::after,
+	a:not(.SocialIcon):focus::after {
 		@apply scale-100;
 	}
 }
