@@ -24,7 +24,7 @@
 				<div class="flex md:flex-row flex-col flex-wrap justify-between gap-5">
 					<div class="flex flex-wrap items-center gap-3">
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
-							Svelte
+							SvelteKit
 						</p>
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
 							Tailwind
@@ -80,7 +80,7 @@
 							<Github cssClass="w-7 h-7 fill-purple-200" />
 						</a>
 						<a href="https://allchat.azurewebsites.net/">
-							<Link cssClass="w-7 h-42 fill-purple-200" />
+							<Link cssClass="w-7 h-7 fill-purple-200" />
 						</a>
 					</div>
 				</div>
@@ -110,10 +110,6 @@
 				<div class="flex md:flex-row flex-col flex-wrap justify-between gap-5">
 					<div class="flex flex-wrap items-center gap-3">
 						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Java</p>
-						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">Swing</p>
-						<p class="italic lg:text-base md:text-sm text-xs bg-purple-600 rounded-lg p-1">
-							Eclipse
-						</p>
 					</div>
 					<div class="flex flex-wrap items-center gap-3">
 						<a href="https://github.com/ShouShou92410/CharacterChanger">

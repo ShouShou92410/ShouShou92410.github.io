@@ -80,12 +80,12 @@
 			<div class="border-l-2 border-primary text-left ml-10">
 				<ul class="list-disc pl-10 md:my-3 my-1">
 					<li class="md:my-1 my-0.5">
-						Worked collaboratively in an agile team of 5 to completely rebuild a decade-old .Net web
+						Worked collaboratively in an agile team of 5 to completely rebuild a decade old .Net web
 						application with ReactJS, leveraging single page application design.
 					</li>
 					<li class="md:my-1 my-0.5">
 						Developed 20 different internal and external API endpoints, from user authentication to
-						report generation, using .Net Core.
+						report generation, using .Net.
 					</li>
 					<li class="md:my-1 my-0.5">
 						Implemented core features of the ReactJS application, such as data validation with Yup.

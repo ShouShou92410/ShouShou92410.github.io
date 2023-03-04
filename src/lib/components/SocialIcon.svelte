@@ -3,7 +3,7 @@
 	export let label: string;
 </script>
 
-<a {href} class="SocialIcon flex items-center">
+<a {href} class="flex items-center">
 	<div class="duration-300">
 		<slot />
 	</div>

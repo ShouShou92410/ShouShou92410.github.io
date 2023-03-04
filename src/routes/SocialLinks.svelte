@@ -16,7 +16,7 @@
 	<SocialIcon href="mailto:sw92410@hotmail.com" label="Email">
 		<Email cssClass="w-8 h-8 fill-primary" />
 	</SocialIcon>
-	<SocialIcon href="/" label="Resume">
+	<SocialIcon href="Resume.pdf" label="Resume">
 		<Resume cssClass="w-8 h-8 fill-primary" />
 	</SocialIcon>
 </div>

@@ -33,14 +33,14 @@
 	p {
 		@apply font-medium;
 	}
-	a:not(.SocialIcon) {
+	a:not(:has(svg)) {
 		@apply relative w-max;
 	}
-	a:not(.SocialIcon)::after {
+	a:not(:has(svg))::after {
 		@apply content-[''] absolute bottom-0 left-0 w-full h-px bg-primary origin-center duration-300 scale-0;
 	}
-	a:not(.SocialIcon):hover::after,
-	a:not(.SocialIcon):focus::after {
+	a:not(:has(svg)):hover::after,
+	a:not(:has(svg)):focus::after {
 		@apply scale-100;
 	}
 }
