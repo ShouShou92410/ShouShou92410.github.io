@@ -507,12 +507,12 @@ video {
 	p {
   font-weight: 500;
 }
-	a:not(.SocialIcon) {
+	a:not(:has(svg)) {
   position: relative;
   width: -moz-max-content;
   width: max-content;
 }
-	a:not(.SocialIcon)::after {
+	a:not(:has(svg))::after {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -528,8 +528,8 @@ video {
   --tw-content: '';
   content: var(--tw-content);
 }
-	a:not(.SocialIcon):hover::after,
-	a:not(.SocialIcon):focus::after {
+	a:not(:has(svg)):hover::after,
+	a:not(:has(svg)):focus::after {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
