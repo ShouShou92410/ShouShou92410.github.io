@@ -13,11 +13,7 @@
 		<div
 			class="flex lg:flex-row flex-col rounded-2xl bg-purple-800 md:px-10 md:py-8 px-5 py-4 gap-5"
 		>
-			<img
-				src="og.png"
-				alt="og"
-				class="lg:w-1/3 rounded-xl border border-primary shadow-md shadow-primary"
-			/>
+			<img src="og.png" alt="og" class="lg:w-1/3 rounded-xl" />
 			<div class="flex flex-col lg:w-2/3 justify-between gap-y-10">
 				<div class="flex flex-col md:gap-y-3 gap-y-1">
 					<p class="2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg h-max">
@@ -48,7 +44,7 @@
 		<div
 			class="flex lg:flex-row flex-col rounded-2xl bg-purple-800 md:px-10 md:py-8 px-5 py-4 gap-5"
 		>
-			<div class="lg:w-1/3 rounded-xl bg-primary" />
+			<img src="AllChatPreview.png" alt="AllChatPreview" class="lg:w-1/3 rounded-xl" />
 			<div class="flex flex-col lg:w-2/3 justify-between gap-y-10">
 				<div class="flex flex-col md:gap-y-3 gap-y-1">
 					<p class="2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg h-max">
@@ -93,7 +89,11 @@
 		<div
 			class="flex lg:flex-row flex-col rounded-2xl bg-purple-800 md:px-10 md:py-8 px-5 py-4 gap-5"
 		>
-			<div class="lg:w-1/3 rounded-xl bg-primary" />
+			<img
+				src="CharacterReplacerPreview.png"
+				alt="CharacterReplacerPreview"
+				class="lg:w-1/3 rounded-xl"
+			/>
 			<div class="flex flex-col lg:w-2/3 justify-between gap-y-10">
 				<div class="flex flex-col md:gap-y-3 gap-y-1">
 					<p class="2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg h-max">
