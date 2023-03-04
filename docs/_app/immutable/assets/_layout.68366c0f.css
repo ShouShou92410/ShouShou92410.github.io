@@ -402,7 +402,7 @@ video {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
-	h1 {
+	h3 {
   width: -moz-max-content;
   width: max-content;
   font-size: 1.5rem;
@@ -410,116 +410,36 @@ video {
 }
 	@media (min-width: 640px) {
 
-  h1 {
+  h3 {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 }
 	@media (min-width: 768px) {
 
-  h1 {
+  h3 {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 }
 	@media (min-width: 1024px) {
 
-  h1 {
+  h3 {
     font-size: 3rem;
     line-height: 1;
   }
 }
 	@media (min-width: 1280px) {
 
-  h1 {
+  h3 {
     font-size: 3.75rem;
     line-height: 1;
   }
 }
 	@media (min-width: 1536px) {
 
-  h1 {
+  h3 {
     font-size: 4.5rem;
-    line-height: 1;
-  }
-}
-	h2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-	@media (min-width: 640px) {
-
-  h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-	@media (min-width: 768px) {
-
-  h2 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-	@media (min-width: 1024px) {
-
-  h2 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-	@media (min-width: 1280px) {
-
-  h2 {
-    font-size: 3rem;
-    line-height: 1;
-  }
-}
-	@media (min-width: 1536px) {
-
-  h2 {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-}
-	h3 {
-  height: -moz-max-content;
-  height: max-content;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-	@media (min-width: 640px) {
-
-  h3 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-	@media (min-width: 768px) {
-
-  h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-	@media (min-width: 1024px) {
-
-  h3 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-	@media (min-width: 1280px) {
-
-  h3 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-	@media (min-width: 1536px) {
-
-  h3 {
-    font-size: 3rem;
     line-height: 1;
   }
 }
@@ -587,14 +507,14 @@ video {
 	p {
   font-weight: 500;
 }
-	a h3,
+	div a,
 	nav a,
 	p a {
   position: relative;
   width: -moz-max-content;
   width: max-content;
 }
-	a h3::after,
+	div a::after,
 	nav a::after,
 	p a::after {
   position: absolute;
@@ -612,10 +532,10 @@ video {
   --tw-content: '';
   content: var(--tw-content);
 }
-	a h3:hover::after,
+	div a:hover::after,
 	nav a:hover::after,
 	p a:hover::after,
-	a h3:focus::after,
+	div a:focus::after,
 	nav a:focus::after,
 	p a:focus::after {
   --tw-scale-x: 1;
@@ -773,6 +693,10 @@ video {
 }
 .h-8 {
   height: 2rem;
+}
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -944,6 +868,10 @@ video {
 .text-left {
   text-align: left;
 }
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -974,13 +902,6 @@ video {
   --tw-shadow-color: #ff6666;
   --tw-shadow: var(--tw-shadow-colored);
 }
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
 .delay-75 {
   transition-delay: 75ms;
 }
@@ -995,6 +916,11 @@ video {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 @media (min-width: 768px) {
@@ -1071,6 +997,11 @@ video {
     padding-top: 1.5rem;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1107,6 +1038,11 @@ video {
     padding-left: 0.75rem;
   }
 
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1119,6 +1055,11 @@ video {
 }
 @media (min-width: 1280px) {
 
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1130,6 +1071,11 @@ video {
   }
 }
 @media (min-width: 1536px) {
+
+  .\32xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 
   .\32xl\:text-6xl {
     font-size: 3.75rem;

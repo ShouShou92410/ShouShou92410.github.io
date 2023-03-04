@@ -1,7 +1,7 @@
 <section id="skill" class="flex flex-col w-full min-h-1/2 justify-center m-auto md:py-12 py-3">
 	<div class="flex justify-end items-center">
 		<hr class="grow" />
-		<h1 class="pl-3">Skill</h1>
+		<h3 class="pl-3">Skill</h3>
 	</div>
 	<div class="flex flex-col md:gap-y-6 gap-y-3">
 		<div>

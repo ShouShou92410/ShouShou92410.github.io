@@ -5,7 +5,7 @@
 <section id="about" class="flex flex-col w-full min-h-1/2 justify-center m-auto md:py-12 py-3">
 	<div class="flex justify-end items-center">
 		<hr class="grow" />
-		<h1 class="pl-3">About</h1>
+		<h3 class="pl-3">About</h3>
 	</div>
 	<div class="md:pt-6 pt-3">
 		<p>

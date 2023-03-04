@@ -1,11 +1,14 @@
 <section id="experience" class="flex flex-col w-full min-h-1/2 justify-center m-auto md:py-12 py-3">
 	<div class="flex justify-end items-center">
 		<hr class="grow" />
-		<h1 class="pl-3">Experience</h1>
+		<h3 class="pl-3">Experience</h3>
 	</div>
 	<div class="md:pt-6 pt-3">
-		<a href="https://www.detechtion.com">
-			<h3>Detechtion Technologies</h3>
+		<a
+			href="https://www.detechtion.com"
+			class="2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg h-max"
+		>
+			Detechtion Technologies
 		</a>
 		<div class="pt-5">
 			<div class="pl-3">
@@ -15,8 +18,9 @@
 			<div class="border-l-2 border-primary text-left ml-10">
 				<ul class="list-disc pl-10 md:my-3 my-1">
 					<li class="md:my-1 my-0.5">
-						Designed and developed an integration testing process using Javascript that tests
-						against a simulator running on a docker. Which had over 60 different test cases.
+						Conceptualized and spearheaded the development of a robust integration testing solution
+						using Javascript to evaluate a Docker-executed simulator, which delivered exceptional
+						test coverage of over 98%.
 					</li>
 				</ul>
 			</div>
@@ -29,22 +33,23 @@
 			<div class="border-l-2 border-primary text-left ml-10">
 				<ul class="list-disc pl-10 md:my-3 my-1">
 					<li class="md:my-1 my-0.5">
-						Setup and developed a data ETL pipeline for data analytics. Azure Data Factory was
-						utilized to extract data from SQL servers, Databricks for transforming the data, and
-						PowerBI for loading the transformed data into PowerBI reports.
+						Orchestrated the design and development of a comprehensive data ETL pipeline for data
+						analytics, leveraging Azure Data Factory to extract data from SQL servers, Databricks
+						for data transformation, and PowerBI for loading the transformed data into PowerBI
+						reports.
 					</li>
 					<li class="md:my-1 my-0.5">
-						Created a web application that serves as a central login page for all of our products
-						using Next.js in only 2 weeks.
+						Successfully developed a Next.js-based web application that acts as a unified login page
+						for our entire product range within a record time of just 2 weeks.
 					</li>
 					<li class="md:my-1 my-0.5">
-						Designed and developed a React Native application that configures an embedded software
-						using Bluetooth connection. Implemented a background queue process to ensure data
-						synchronization even if the hardware device loses connectivity.
+						Designed and developed a React Native-based application that facilitates configuration
+						of embedded software via Bluetooth connection, featuring a background queue process to
+						ensure seamless data synchronization even when the hardware device is not connected.
 					</li>
 					<li class="md:my-1 my-0.5">
-						Improve visibility of the updated data entry feature to transition users away from
-						legacy functionalities.
+						Improved user visibility of updated critical features, helping to move away from legacy
+						functionalities.
 					</li>
 				</ul>
 			</div>
@@ -57,16 +62,12 @@
 			<div class="border-l-2 border-primary text-left ml-10">
 				<ul class="list-disc pl-10 md:my-3 my-1">
 					<li class="md:my-1 my-0.5">
-						Worked in an agile team of 5 to rebuild a 10 years old web application with ReactJS and
-						followed a single page application desgin.
+						Built a feature that ensured compliance with the government of Alberta's environmental
+						regulations for all of our Canadian clients.
 					</li>
 					<li class="md:my-1 my-0.5">
-						Worked on a feature that allows all of our Canadian clients to use and be compliance
-						with Alberta government's environmental regulation.
-					</li>
-					<li class="md:my-1 my-0.5">
-						Manage and upgrade a Cordova application with around 20 different client versions hosted
-						on the EC2 instances.
+						Managed a Cordova application, comprising 20 distinct client versions, hosted on
+						multiple EC2 instances.
 					</li>
 				</ul>
 			</div>
@@ -79,15 +80,15 @@
 			<div class="border-l-2 border-primary text-left ml-10">
 				<ul class="list-disc pl-10 md:my-3 my-1">
 					<li class="md:my-1 my-0.5">
-						Worked in an agile team of 5 to rebuild a 10 years old web application with ReactJS and
-						followed a single page application desgin.
+						Worked collaboratively in an agile team of 5 to completely rebuild a decade-old .Net web
+						application with ReactJS, leveraging single page application design.
 					</li>
 					<li class="md:my-1 my-0.5">
-						Developed 20 different internal and external API endopints using .Net Core.
+						Developed 20 different internal and external API endpoints, from user authentication to
+						report generation, using .Net Core.
 					</li>
 					<li class="md:my-1 my-0.5">
-						Implemented many core functionalities of the ReactJS application, such as page routing
-						and data entry.
+						Implemented core features of the ReactJS application, such as data validation with Yup.
 					</li>
 				</ul>
 			</div>
