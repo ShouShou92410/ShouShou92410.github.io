@@ -85,7 +85,7 @@
 					</li>
 					<li class="md:my-1 my-0.5">
 						Developed 20 different internal and external API endpoints, from user authentication to
-						report generation, using .Net.
+						report generation, using .Net and Entity Framework Core.
 					</li>
 					<li class="md:my-1 my-0.5">
 						Implemented core features of the ReactJS application, such as data validation with Yup.
